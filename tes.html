@@ -3,155 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Story</title>
+    <title>Certificates</title>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .timeline-item {
-        position: relative;
-      }
-
-      .timeline-item::after {
-        content: "";
-        position: absolute;
-        width: 2px; /* Adjust line thickness */
-        background-color: #ddd; /* Adjust line color */
-        top: 50%;
-        transform: translateY(-50%);
-        left: 50%; /* Start in the middle of the box */
-        z-index: -1;
-      }
-
-      /* Snake-like pattern */
-      .timeline-item:nth-child(even)::after {
-        /* Even items go right */
-        left: 100%;
-        height: 2px;
-        width: 50%;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
-
-      .timeline-item:nth-child(odd)::after {
-        /* Odd items go left */
-        left: 0;
-        height: 2px;
-        width: 50%;
-        top: 50%;
-        transform: translate(-100%, -50%);
-      }
-
-      .timeline-item:first-child::after {
-        /* First item starts down */
-        height: 50%;
-        width: 2px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, 0);
-      }
-
-      .timeline-item:last-child::after {
-        /* Last item ends down */
-        height: 50%;
-        width: 2px;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 0);
-      }
-
-      @media (min-width: 768px) {
-        .timeline-container {
-          display: grid;
-          grid-template-columns: repeat(
-            3,
-            1fr
-          ); /* 3 columns on larger screens */
-          gap: 4rem;
-        }
-
-        .timeline-item::after {
-          height: 50%;
-          width: 2px;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, 0);
-        }
-        .timeline-item:nth-child(3n + 2)::after {
-          height: 2px;
-          width: 50%;
-          left: 100%;
-          top: 50%;
-          transform: translate(0, -50%);
-        }
-        .timeline-item:nth-child(3n + 3)::after {
-          height: 50%;
-          width: 2px;
-          left: 50%;
-          top: 0;
-          transform: translate(-50%, 0);
-        }
-        .timeline-item:nth-child(3n + 1)::after {
-          height: 50%;
-          width: 2px;
-          left: 50%;
-          top: 100%;
-          transform: translate(-50%, -100%);
-        }
+      .certificate-placeholder {
+        width: 256px;
+        height: 352px;
+        background-color: #eee; /* Light gray background */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed #ccc; /* Dashed border */
+        color: #999; /* Light gray text */
+        font-size: 1.2rem;
       }
     </style>
   </head>
-  <body class="bg-gray-100 p-8">
-    <div class="container mx-auto bg-white p-12 rounded-lg shadow-md">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Story</h2>
-      <div class="timeline-container">
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
+  <body class="bg-gray-100">
+    <section class="container mx-auto px-4 py-5 mt-16">
+      <h1 class="text-3xl font-bold mb-8">CERTIFICATES</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="certificate-placeholder">
+              <span>Certificate Placeholder</span>
+              <span>256x352</span>
+            </div>
+          </div>
         </div>
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <img src="your-image.jpg" alt="1974" class="mx-auto w-24 h-24 mb-4" />
-          <h3 class="font-bold text-center">1974</h3>
-          <p class="text-center text-gray-700">
-            Founded in Bandung as a joint-venture company with capital of USD
-            0.9 million.
-          </p>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </div>
+    </section>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
