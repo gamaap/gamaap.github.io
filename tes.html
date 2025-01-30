@@ -3,85 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificates</title>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .certificate-placeholder {
-        width: 256px;
-        height: 352px;
-        background-color: #eee; /* Light gray background */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px dashed #ccc; /* Dashed border */
-        color: #999; /* Light gray text */
-        font-size: 1.2rem;
+      img#countryFlag {
+        width: 24px;
+        height: 16px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        display: inline-block;
+      }
+      select {
+        padding-left: 0.5rem;
+        background-position: 0.5rem center;
+        background-repeat: no-repeat;
+        width: auto;
+      }
+      .hidden {
+        display: none;
       }
     </style>
   </head>
-  <body class="bg-gray-100">
-    <section class="container mx-auto px-4 py-5 mt-16">
-      <h1 class="text-3xl font-bold mb-8">CERTIFICATES</h1>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="certificate-placeholder">
-              <span>Certificate Placeholder</span>
-              <span>256x352</span>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+  <body>
+    <div class="flex items-center space-x-2">
+      <!-- Dropdown kode negara -->
+      <div class="relative flex items-center">
+        <img id="countryFlag" src="" alt="Flag" width="100" class="hidden" />
+        <select
+          id="countryCode"
+          class="dynamic-width border border-gray-300 p-1 rounded bg-white cursor-pointer"
+        >
+          <option value="" selected disabled>-</option>
+        </select>
       </div>
-    </section>
 
+      <!-- Input phone number -->
+      <input
+        class="w-full border border-gray-300 p-2 rounded"
+        placeholder="Phone Number"
+        type="text"
+      />
+    </div>
     <script>
-      var swiper = new Swiper(".swiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        slidesPerGroup: 4,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+      // Fungsi untuk mendapatkan data dari REST Countries API
+      async function fetchCountries() {
+        const response = await fetch("https://restcountries.com/v3.1/all");
+        const countries = await response.json();
+
+        // Filter negara dengan kode telepon
+        const countryOptions = countries
+          .filter((country) => country.idd?.root) // Hanya negara dengan kode telepon
+          .map((country) => ({
+            name: country.name.common,
+            flag: country.flags.svg,
+            code: `${country.idd.root}${
+              country.idd.suffixes ? country.idd.suffixes[0] : ""
+            }`,
+          }))
+          .sort((a, b) => a.name.localeCompare(b.name)); // Urutkan negara secara alfabetis
+
+        return countryOptions;
+      }
+
+      // Fungsi untuk mengisi dropdown
+      async function populateDropdown() {
+        const countryCodeSelect = document.getElementById("countryCode");
+        const flagImage = document.getElementById("countryFlag");
+
+        const countries = await fetchCountries();
+
+        // Tambahkan opsi ke dropdown
+        countries.forEach((country) => {
+          const option = document.createElement("option");
+          option.value = country.code;
+          option.setAttribute("data-flag", country.flag);
+          option.textContent = `${country.name} (${country.code})`;
+          countryCodeSelect.appendChild(option);
+        });
+
+        // Update bendera ketika pilihan berubah
+        countryCodeSelect.addEventListener("change", () => {
+          const selectedOption = countryCodeSelect.selectedOptions[0];
+          flagImage.src = selectedOption.getAttribute("data-flag");
+          flagImage.classList.remove("hidden"); // Tampilkan gambar
+        });
+      }
+
+      // Inisialisasi dropdown
+      populateDropdown();
     </script>
   </body>
 </html>
