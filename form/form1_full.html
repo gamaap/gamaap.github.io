@@ -1,0 +1,780 @@
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://registry.npmmirror.com/vue/3.3.11/files/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+  .readonly-input {
+    background-color: #e5e5e5; /* Warna abu-abu */
+  }
+
+   body {
+      font-family: 'Monserrat', sans-serif;
+      font-size: 16px;
+    }
+    a:hover{
+      color: rgb(245, 186, 90);
+    }
+    .form-input {
+      border: 2px solid rgb(245, 186, 90);;
+      border-radius: 25px;
+      padding: 10px 15px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .form-label {
+      color: #0b0b0b;
+      font-weight: bold;
+      /* margin-left: 90px; */
+    }
+    .form-label1{
+      color: #0b0b0b;
+      font-weight: bold;
+      margin-left: 250px;
+    }
+    .form-section {
+      margin-bottom: 20px;
+    }
+    .form-radio {
+      margin-right: 4px;
+    }
+    .form-select {
+      border: 2px solid rgb(245, 186, 90);;
+      border-radius: 25px;
+      padding: 10px 15px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .form-textarea {
+      border: 2px solid rgb(245, 186, 90);;
+      border-radius: 25px;
+      padding: 10px 15px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .form-file {
+      border: 2px solid rgb(245, 186, 90);;
+      border-radius: 25px;
+      padding: 10px 15px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .form-button {
+      background-color: rgb(245, 186, 90);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 15px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .form-button2 {
+      background-color: rgb(245, 186, 90);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 2px ;
+      width: 100%;
+      margin-bottom: 2px;
+      font-size: 18px;
+    }
+    span#icon-1{
+      /* color: red; */
+      margin-left: 26px;
+      padding-bottom:26px;
+      visibility: hidden;
+    }
+    span#icon-2{
+      /* color: red; */
+      margin-left: 26px;
+      padding-bottom:26px;
+      visibility: hidden;
+    }
+    
+    .form-button1{
+      background-color: rgb(245, 186, 90);
+      border-radius: 25px;
+      width: 10%;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      margin-left: 44%;
+      color: white;
+    }
+    p.text{
+      color: rgb(245, 186, 90);
+      font-weight: bold;
+      margin-left:-10px;
+      font-size:40px;
+      text-align: center;
+    }
+    span{
+      color: #0b0b0b;
+      font-weight: bold;
+      margin-left: 490px;
+      font-size:40px;
+    }
+    .form-checkbox {
+      margin-right: 10px;
+    }
+    .form-section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .form-section{
+      margin: 0 250px;    
+    }
+    .form-checkbox {
+    display: inline-block; /* Style default */
+    margin-right: 0.5rem; /* Jarak antara checkbox dan label */
+}
+
+    label.block {
+      display: block; /* Membuat setiap checkbox berada di baris baru */
+    }
+    a.text-lg, p {
+          font-family: 'Monserrat', sans-serif;
+          font-size: 16px;
+        }
+    a.text-lg:hover{
+      color: rgb(245, 186, 90);
+      /* font-size: 20px; */
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid rgb(245, 186, 90);
+      transform: scaleX(0);
+      transition: 0.5s linear;
+    }
+    a:hover{
+      color: rgb(245, 186, 90);
+    }
+    a.text-lg::after{
+    content: '';
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(245, 186, 90);
+    transform: scaleX(0.5);
+    transition: 0.2s linear;
+    }
+    a.text-lg:hover::after{
+      transform: scaleX(0.5);
+    }
+    #btn-send:hover{
+      background-color:  rgb(245, 186, 90);
+    }
+  
+  .space-x-2 > *:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  
+ 
+  </style>
+</head>
+ <!-- header start -->
+ <header class="flex justify-between items-center p-.2 bg-white shadow-md z-[999] fixed top-0 left-0 w-full">
+  <div class="text-3xl font-bold px-8 py-1">
+   <img id="ewindo" alt="PT Ewindo Logo" src="logo.png"/>
+  </div>
+  <nav class="space-x-4 px-8 py-2">
+   <a class="text-lg" href="#">
+    Company
+   </a>
+   <a class="text-lg" href="#">
+    Products
+   </a>
+   <a class="text-lg" href="../news/news.html">
+    Newsroom
+   </a>
+   <a class="text-lg" href="../job/job.html">
+    Career
+   </a>
+   <a class="text-lg" href="../contact/index.html">
+    Contact
+   </a>
+   <a class="text-lg" href="#">
+    <i class="fas fa-globe">
+    </i>
+   </a>
+  </nav>
+ </header>
+ <!-- header End -->
+<body>
+  <div id="app" class="p-4 mt-20">
+    <p class="text">Form</p> <span>Registration</span>
+    <div class="form-section">
+      <label class="form-label">NIK*</label>
+      <input type="text" class="form-input" placeholder="1236545656666666">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Nama Lengkap*</label>
+      <input type="text" class="form-input" placeholder="Nama Lengkap">
+    </div>
+    <div class="form-section mb-4">
+      <label class="form-label">Jenis Kelamin*</label>
+      <div>
+        <input type="radio" class="form-radio" name="gender" value="Laki-Laki">Laki-Laki
+        <input type="radio" class="form-radio" name="gender" value="Perempuan">Perempuan
+      </div>
+    </div>
+    <div class="form-section">
+      <label class="form-label">Nomor Handphone 1*</label>
+      <input type="text" class="form-input" placeholder="081.... (Wajib, pastikan WhatsApp aktif)">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Nomor Handphone 2</label>
+      <input type="text" class="form-input" placeholder="081.... (Tidak Wajib)">
+    </div>
+    <div class="form-section">
+      <label class="form-label">E-mail*</label>
+      <input type="email" class="form-input" placeholder="E-mail (Pastikan aktif)">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Tanggal Lahir sesuai KTP*</label>
+      <input type="date" class="form-input">
+    </div>
+    <!-- Alamat KTP -->
+    <div class="form-section">
+      <label class="form-label">Alamat KTP*</label>
+      <input type="text" id="alamat" class="form-input" placeholder="Alamat KTP">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kota/Kabupaten*</label>
+      <input type="text" id="kota" class="form-input" placeholder="Kota/Kabupaten">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kecamatan*</label>
+      <input type="text" id="kecamatan" class="form-input" placeholder="Kecamatan">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kelurahan*</label>
+      <input type="text" id="kelurahan" class="form-input" placeholder="Kelurahan">
+    </div>
+    
+    <!-- Checkbox -->
+    <div class="form-section mb-4">
+      <input type="checkbox" id="checkboxsame" class="form-checkbox"> Sama dengan alamat KTP?
+    </div>
+
+    <!-- Form Domisili -->
+    <div class="form-section">
+      <label class="form-label">Alamat Domisili*</label>
+      <input type="text" id="alamat_domisili" class="form-input" placeholder="Alamat Domisili">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kota/Kabupaten Domisili*</label>
+      <input type="text" id="kota_domisili" class="form-input" placeholder="Kota/Kabupaten">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kecamatan Domisili*</label>
+      <input type="text" id="kecamatan_domisili" class="form-input" placeholder="Kecamatan">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Kelurahan Domisili*</label>
+      <input type="text" id="kelurahan_domisili" class="form-input" placeholder="Kelurahan">
+    </div>
+    
+    <div class="form-section mb-2">
+      <label class="form-label">Agama*</label>
+      <select class="form-select">
+        <option>-</option>
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Khatolik</option>
+        <option>Budha</option>
+        <option>Hindu</option>
+      </select>
+    </div>
+    <div class="form-section mb-4">
+      <label class="form-label">Status Pernikahan*</label>
+      <div>
+        <input type="radio" class="form-radio" name="marital" value="Belum Menikah">Belum Menikah
+        <input type="radio" class="form-radio" name="marital" value="Sudah Menikah">Sudah Menikah
+      </div>
+    </div>
+    <div class="form-section">
+      <label class="form-label">Pendidikan Terakhir*</label>
+      <select id="pendidikan" class="form-select">
+        <option>Pendidikan Terakhir</option>
+        <option>Paket C</option>
+        <option>SD</option>
+        <option>SMP</option>
+        <option>SMA</option>
+        <option>SMK</option>
+        <option>D1</option>
+        <option>D1</option>
+        <option>D2</option>
+        <option>D3</option>
+        <option>S1</option>
+        <option>S2</option>
+        <option>S3</option>
+      </select>
+    </div>
+    <div class="form-section">
+      <label class="form-label">Institusi Pendidikan / Universitas*</label>
+      <input type="text" class="form-input" placeholder="Ketik/Pilih Institusi Pendidikan">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Program Studi/Jurusan*</label>
+      <input type="text" id="jurusan" class="form-input" placeholder="Ketik/Pilih Program Studi/Jurusan Bukan Fakultas">
+    </div>
+    <div class="form-section">
+      <label class="form-label">IPK Terakhir*</label>
+     <input type="text" class="form-input" placeholder="Ketik/IPK ANDA">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Tahun Kelulusan*</label>
+      <input type="text" class="form-input" placeholder="Tahun Kelulusan">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Keahlian Khusus</label>
+      <textarea class="form-textarea" placeholder="Cth: Bahasa Pemrograman, Penggunaan Tools / Software, dll"></textarea>
+      <small>Yang bersifat teknis</small>
+    </div>
+    <!-- <div class="form-section"> -->
+      <label class="form-label1">Pengalaman Kerja/Magang</label>
+      <div class="form-section">
+        <div id="form-container">
+          <label class="form-label1 text-xl font-bold mb-4 block">Pengalaman Kerja/Magang</label>
+          <button 
+            id="add-form" 
+            class="bg-yellow-300 text-white px-8 py-2 mx-80 rounded hover:bg-yellow-600 mb-4 rounded-lg">
+            Tambah
+          </button>
+        </div>
+        </div>
+        </div>
+    <div class="form-section mb-4">
+      <label class="form-label">Kesediaan bekerja di seluruh Plant PT. EWINDO*</label>
+      <div>
+        <input type="radio" class="form-radio" name="availability" value="Tidak"> Tidak
+        <input type="radio" class="form-radio" name="availability" value="Ya"> Ya
+      </div>
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload Pas Foto*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload CV*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload KTP*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload KK*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload Ijazah*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Upload Sertifikat Pendukung*</label>
+      <input type="file" class="form-file">
+    </div>
+    <div class="form-section">
+      <label class="form-label">Info Lowongan*</label>
+      <small>Wajib Memilih Minimal 1 Info Lowongan</small>
+      <div class="border-b border-slate-200">
+        <button onclick="toggleAccordion(1)"
+          <span class="form-button2 mb-8">Media Sosial</span>
+          <span id="icon-1" class="text-slate-900 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="pb-5 text-sm text-slate-500">
+            <div class="space-y-2">
+              <label class="block">
+                <input type="checkbox" class="form-checkbox"> Facebook
+              </label>
+              <label class="block">
+                <input type="checkbox" class="form-checkbox"> Instagram
+              </label>
+              <label class="block">
+                <input type="checkbox" class="form-checkbox"> Website
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="toggleAccordion(2)"
+      <span class="form-button2 ">Kerabat/Lainnya</span>
+      <span id="icon-2" class="text-slate-900 transition-transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="pb-5 text-sm text-slate-500">
+            <div>
+              <input type="checkbox" id="checkboxTeman" class="form-checkbox"> Teman/Kerabat 
+              <input type="text" id="inputTeman" class="form-input readonly-input" placeholder="" readonly>
+              <input type="checkbox" id="checkboxLainnya" class="form-checkbox"> Lainnya
+              <input type="text" id="inputLainnya" class="form-input readonly-input" placeholder="" readonly>
+            </div>
+          </div>
+        </div>
+  
+      
+  
+    <!-- <div class="form-section mb-7"></div> -->
+    <!-- <label class="form-label">Resume/CV *</label> -->
+    <!-- <div class="form-section"> -->
+     
+   
+
+      <button id="applyButton" class="form-button1 bg-yellow-500 text-white px-4 py-2 rounded flex items-center mt-4">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        Kirim
+      </button>
+
+      <div id="confirmationModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full">
+            <h2 class="text-xl font-bold text-center mb-4">Konfirmasi</h2>
+            <p class="text-gray-700 mb-6">
+                Dengan ini saya menyatakan bahwa keterangan dan data yang saya isi di atas adalah benar. 
+                Dalam hal ketidak-benaran, maka saya bertanggung jawab penuh atas akibatnya, 
+                dan saya bersedia dikenakan sanksi sesuai dengan peraturan perusahaan.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button id="confirmYesButton" class="bg-[rgb(245,186,90)] text-white px-6 py-2 rounded-full hover:bg-yellow-400">
+                    Ya
+                </button>
+                <button id="confirmNoButton" class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">
+                    Tidak
+                </button>
+            </div>
+        </div>
+
+    
+    
+        </div>
+    </div>
+
+   <!-- Footer Section Start -->
+   <footer class="bg-gray-10 text-black p-10">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-5">
+        <div>
+          <div>
+            <h3 class="text-xl font-bold">PLANT 1</h3>
+            <p class="mt-2">
+              Jl. Cimuncang no. 68, Bandung, Jawa Barat, Indonesia.
+            </p>
+            <p class="mt-2">T: +62 22 720 8008</p>
+            <p class="mt-2">F: +62 22 720 7132, 720 6283</p>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-xl font-bold">PLANT 2</h3>
+            <p class="mt-2">
+              Jalan Raya Rancaekek KM 24.5 Sumedang, 45364, Jawa Barat, Indonesia.
+            </p>
+            <p class="mt-2">T: +62 22 778 0008</p>
+            <p class="mt-2">F: +62 22 778 0001</p>
+          </div>
+        </div>
+        <div class="lg:border-l lg:pl-10">
+          <div class="flex flex-wrap gap-8 lg:gap-12">
+            <div>
+              <h3 class="text-xl font-bold">Company</h3>
+              <ul class="mt-2 space-y-2 text-sm">
+                <li><a class="hover:underline" href="#">About Us</a></li>
+                <li><a class="hover:underline" href="#">Our Story</a></li>
+                <li>
+                  <a class="hover:underline" href="#">Quality Control</a>
+                </li>
+                <li>
+                  <a class="hover:underline" href="#">Certificates</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Products</h3>
+              <ul class="mt-2 space-y-2 text-sm">
+                <li>
+                  <a class="hover:underline" href="#">Our Products</a>
+                </li>
+                <li>
+                  <a class="hover:underline" href="#">Product Catalog</a>
+                </li>
+                <li>
+                  <a class="hover:underline" href="#">Customer Review</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Newsroom</h3>
+              <ul class="mt-2 space-y-2 text-sm">
+                <li><a class="hover:underline" href="#">What's New?</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Career</h3>
+              <ul class="mt-2 space-y-2 text-sm">
+                <li><a class="hover:underline" href="#">Join Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">Contact</h3>
+              <a
+                href="#"
+                class="mt-2 inline-block px-6 py-2 bg-yellow-600 text-white font-bold rounded hover:bg-yellow-700 transition duration-300"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between items-center mt-10 pt-4 border-t border-gray-600"
+      >
+        <p class="text-sm">&copy; 2025 PT EWINDO, All Rights Reserved.</p>
+        <div class="space-x-4">
+          <a class="hover:text-gray-400 text-sm" href="#"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="hover:text-gray-400 text-sm" href="#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a class="hover:text-gray-400 text-sm" href="#"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  
+
+  <script>
+    const { createApp, ref } = Vue
+    createApp({
+      setup() {
+        return {}
+      }
+    }).mount('#app')
+  </script>
+
+<script>
+  document.getElementById("checkboxsame").addEventListener("change", function() {
+    const isChecked = this.checked;
+
+    // Ambil elemen input domisili
+    const alamatDomisili = document.getElementById("alamat_domisili");
+    const kotaDomisili = document.getElementById("kota_domisili");
+    const kecamatanDomisili = document.getElementById("kecamatan_domisili");
+    const kelurahanDomisili = document.getElementById("kelurahan_domisili");
+
+    if (isChecked) {
+      // Ambil nilai terbaru dari input KTP setiap kali checkbox dicentang
+      alamatDomisili.value = document.getElementById("alamat").value;
+      kotaDomisili.value = document.getElementById("kota").value;
+      kecamatanDomisili.value = document.getElementById("kecamatan").value;
+      kelurahanDomisili.value = document.getElementById("kelurahan").value;
+
+      // Jadikan readonly & ubah warna background
+      alamatDomisili.readOnly = true;
+      kotaDomisili.readOnly = true;
+      kecamatanDomisili.readOnly = true;
+      kelurahanDomisili.readOnly = true;
+
+      alamatDomisili.classList.add("readonly-input");
+      kotaDomisili.classList.add("readonly-input");
+      kecamatanDomisili.classList.add("readonly-input");
+      kelurahanDomisili.classList.add("readonly-input");
+
+    } else {
+      // Aktifkan kembali input domisili
+      alamatDomisili.value = "";
+      kotaDomisili.value = "";
+      kecamatanDomisili.value = "";
+      kelurahanDomisili.value = "";
+
+      alamatDomisili.readOnly = false;
+      kotaDomisili.readOnly = false;
+      kecamatanDomisili.readOnly = false;
+      kelurahanDomisili.readOnly = false;
+
+      alamatDomisili.classList.remove("readonly-input");
+      kotaDomisili.classList.remove("readonly-input");
+      kecamatanDomisili.classList.remove("readonly-input");
+      kelurahanDomisili.classList.remove("readonly-input");
+    }
+  });
+</script>
+
+<script>
+  document.getElementById("pendidikan").addEventListener("change", function() {
+    const selectedValue = this.value;
+    const jurusanInput = document.getElementById("jurusan");
+
+    // Jika yang dipilih adalah Paket C, SD, atau SMP
+    if (selectedValue === "Paket C" || selectedValue === "SD" || selectedValue === "SMP") {
+      jurusanInput.value = ""; // Kosongkan input
+      jurusanInput.readOnly = true; // Jadikan readonly
+      jurusanInput.classList.add("readonly-input"); // Tambahkan warna abu-abu
+    } else {
+      jurusanInput.readOnly = false; // Aktifkan kembali input
+      jurusanInput.classList.remove("readonly-input"); // Kembalikan warna normal
+    }
+  });
+</script>
+
+<script>
+  // Fungsi untuk mengaktifkan atau menonaktifkan input berdasarkan checkbox
+  function toggleInput(checkboxId, inputId) {
+    const checkbox = document.getElementById(checkboxId);
+    const input = document.getElementById(inputId);
+
+    checkbox.addEventListener("change", function() {
+      if (this.checked) {
+        input.readOnly = false; // Aktifkan input
+        input.classList.remove("readonly-input"); // Hilangkan warna abu-abu
+      } else {
+        input.readOnly = true; // Jadikan readonly
+        input.value = ""; // Kosongkan input
+        input.classList.add("readonly-input"); // Tambahkan warna abu-abu
+      }
+    });
+  }
+
+  // Panggil fungsi untuk setiap pasangan checkbox-input
+  toggleInput("checkboxTeman", "inputTeman");
+  toggleInput("checkboxLainnya", "inputLainnya");
+</script>
+
+<script>
+  const formContainer = document.getElementById("form-container");
+  const addFormButton = document.getElementById("add-form");
+  const addForm1 = document.getElementById("add-form1");
+  let formCount = 0;
+  const maxForms = 5;
+
+  // Fungsi untuk membuat form baru
+  function createForm(id) {
+    const formDiv = document.createElement("div");
+    // formDiv.className = "form-section";
+    formDiv.id = `form-${id}`;
+
+    formDiv.innerHTML = `
+      <div class="flex justify-between items-center mb-2">
+        <label class="font-bold text-lg">Pengalaman ${id}</label>
+        <button 
+          class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 rounded-lg"
+          onclick="removeForm(${id})">
+          Hapus
+        </button>
+      </div>
+      
+        <label class="form-label">Nama Perusahaan / Instansi</label>
+        <input type="text" class="form-input" placeholder="Nama Instansi/Perusahaan">
+      </div>
+
+        <label class="form-label">Posisi / Jabatan</label>
+        <input type="text" class="form-input" placeholder="Posisi/Jabatan">
+      </div>
+
+        <label class="form-label">Dari Tahun</label>
+        <input type="date" class="form-input">
+      </div>
+
+        <label class="form-label">Hingga Tahun</label>
+        <input type="date" class="form-input">
+      </div>
+
+        <label class="form-label">Gaji</label>
+        <input type="text" class="form-input" placeholder="contoh: 1000000">
+      </div>
+      
+    `;
+    return formDiv;
+  }
+
+  // Fungsi untuk menambahkan form
+
+  addFormButton.addEventListener("click", () => {
+    if (formCount < maxForms) {
+      formCount++;
+      const newForm = createForm(formCount);
+      formContainer.appendChild(newForm);
+    } else {
+      alert("Anda hanya bisa menambahkan hingga 5 formulir.");
+    }
+  });
+  
+  // Fungsi untuk menghapus form
+  function removeForm(id) {
+    const formToRemove = document.getElementById(`form-${id}`);
+    if (formToRemove) {
+      formContainer.removeChild(formToRemove);
+      formCount--;
+    }
+  }
+</script>
+
+<script>
+  function toggleAccordion(index) {
+    const content = document.getElementById(`content-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+ 
+    // SVG for Down icon
+    const downSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg>
+    `;
+ 
+    // SVG for Up icon
+    const upSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+      </svg>
+    `;
+ 
+    // Toggle the content's max-height for smooth opening and closing
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      content.style.maxHeight = '0';
+      icon.innerHTML = upSVG;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.innerHTML = downSVG;
+    }
+  }
+</script>
+
+<script>
+  // Element selectors
+  const applyButton = document.getElementById("applyButton");
+  const confirmationModal = document.getElementById("confirmationModal");
+  const confirmYesButton = document.getElementById("confirmYesButton");
+  const confirmNoButton = document.getElementById("confirmNoButton");
+  const finalModal = document.getElementById("finalModal");
+  const closeFinalModalButton = document.getElementById("closeFinalModalButton");
+
+  // Show confirmation modal
+  applyButton.addEventListener("click", () => {
+      confirmationModal.classList.remove("hidden");
+  });
+
+  // Handle "Ya" button click
+  confirmYesButton.addEventListener("click", () => {
+    window.open("../ucapan/alert.html", "_blank");
+  });
+
+  // Handle "Tidak" button click
+  confirmNoButton.addEventListener("click", () => {
+      confirmationModal.classList.add("hidden");
+  });
+
+  // Close final modal
+</script>
+</body>
+</html>
