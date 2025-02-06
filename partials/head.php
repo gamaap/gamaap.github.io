@@ -8,13 +8,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <style>
-      .swiper-slide {
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      p, ul, li {
+        font-family: "Open Sans", serif;
+      }
+
+      /* .swiper-slide {
         opacity: 0.4;
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
         transform: scale(0.8);
-      }
+      } */
 
       .swiper-slide-active {
         opacity: 1;

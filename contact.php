@@ -5,7 +5,7 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
   <!-- BANNER SECTION -->
   <section class="container mx-auto sm:px-44 pt-20 mt-8">
     <div class="w-full rounded-xl overflow-hidden shadow-lg">

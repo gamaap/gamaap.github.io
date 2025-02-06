@@ -5,7 +5,7 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
   <section class="container mx-auto sm:px-44 py-16 mt-16">
     <!--
   This example requires some changes to your config:

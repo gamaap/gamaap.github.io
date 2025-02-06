@@ -5,33 +5,36 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
     <!-- BANNER SECTION -->
     <section class="container mx-auto sm:px-44 pt-20 mt-8">
-    <div class="w-full rounded-xl overflow-hidden shadow-lg">
-        <div
-        class="w-full min-h-[400px] bg-top bg-cover flex items-center justify-center"
-        style="
-            background-image: url(/assets/hero/4.png);
-        "
-        >
-        <div
-            class="flex items-center justify-center w-full h-full py-12"
-        >
-            <div class="text-center">
-            <div class="container px-4 mx-auto">
-                <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-extrabold tracking-wide text-gray-900 sm:text-4xl uppercase bg-white/80 px-4 py-2 rounded-lg">
-                    Join Us
-                </h2>
+        <div class="w-full rounded-lg overflow-hidden shadow-lg">
+            <div
+            class="w-full min-h-[400px] bg-top bg-cover flex items-center justify-center"
+            style="
+                background-image: url(/assets/hero/4.png);
+            "
+            >
+            <div
+                class="flex items-center justify-center w-full h-full py-12"
+            >
+                <div class="text-center">
+                <div class="container px-4 mx-auto">
+                    <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-extrabold tracking-wide text-gray-900 sm:text-4xl uppercase bg-white/80 px-4 py-2 rounded-lg">
+                        Join Us
+                    </h2>
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
         </div>
-        </div>
-    </div>
     </section>
     <!-- JOBS SECTION -->
+    <div class="flex items-center justify-center">
+        <a href="career-empty.php" class="text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Empty State</a>
+    </div>
     <div class="text-center mt-14">
         <h1 class="text-3xl font-bold">Available Jobs</h1>
         <p class="text-gray-500 mt-4">Placement will be adjusted based on the results of the test and interview.</p>

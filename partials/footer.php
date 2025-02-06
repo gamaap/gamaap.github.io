@@ -84,7 +84,10 @@
           ><i class="fab fa-facebook"></i
         ></a>
         <a class="hover:text-gray-400 text-sm" href="#"
-          ><i class="fab fa-twitter"></i
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a class="hover:text-gray-400 text-sm" href="#"
+          ><i class="fab fa-linkedin"></i
         ></a>
       </div>
     </div>

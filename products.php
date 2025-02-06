@@ -5,7 +5,7 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
   <!-- PRODUCTS PARAGRAPH PAGE -->
   <section class="container mx-auto sm:px-44 py-16 mt-16 text-center">
     <h1 class="text-5xl font-bold text-yellow-500">Products</h1>

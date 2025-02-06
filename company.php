@@ -5,17 +5,17 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
   <!-- ABOUT US SECTION -->
   <section
     class="container mx-auto px-44 py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800"
   >
     <h1
-      class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+      class="text-5xl font-bold text-yellow-500 text-pretty text-center"
     >
       About Us
     </h1>
-    <div class="text-base/7 text-gray-700">
+    <div class="text-base text-gray-700 leading-7 text-justify">
       <p class="mt-8">
         PT Ewindo was established on May 10, 1974, as a joint venture
         dedicated to manufacturing high-quality electrical products. With
@@ -24,7 +24,7 @@
         cords, and cord sets.
       </p>
       <p class="mt-4">
-        Our workforce consists of 3,670 dedicated employees, spread across
+        Our workforce consists of 2.800 dedicated employees, spread across
         two advanced facilities:
       </p>
       <ul role="list" class="mt-4 space-y-4 text-gray-600">
@@ -33,7 +33,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="mt-1 size-5 flex-none text-indigo-600"
+            class="mt-1 size-5 flex-none text-yellow-500"
           >
             <path
               fill-rule="evenodd"
@@ -43,10 +43,9 @@
           </svg>
 
           <span
-            ><strong class="font-semibold text-gray-900">Plant 1.</strong>
-            Located on 24,157 sqm, this facility produces enamel wire,
-            electric cables, automotive cables, and power supply
-            cords.</span
+            ><strong class="font-semibold text-gray-900">Plant 1 :</strong>
+            Located at Jalan Cimuncang No. 68 in Bandung, it specializes in producing magnet wire, a variety of cables (including electronic, automotive, and UL/CSA), and power supply cords on a 2.4-hectare site.
+          </span
           >
         </li>
         <li class="flex gap-x-3">
@@ -54,7 +53,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="mt-1 size-5 flex-none text-indigo-600"
+            class="mt-1 size-5 flex-none text-yellow-500"
           >
             <path
               fill-rule="evenodd"
@@ -64,21 +63,14 @@
           </svg>
 
           <span
-            ><strong class="font-semibold text-gray-900">Plant 2.</strong>
-            Spanning 25,000 sqm, this plant specializes in manufacturing
-            wiring harnesses.</span
+            ><strong class="font-semibold text-gray-900">Plant 2 :</strong>
+            Situated on a 2.5-hectare plot at Jalan Rancaekek KM 24.5 within the Dwipapuri Industrial Estate, it focuses on wiring harnesses for both electronic and automotive applications.
+          </span
           >
         </li>
       </ul>
       <p class="mt-4">
-        We are proud to have strong backing from both Japanese and
-        Indonesian shareholders, including Sakata Manufacturing Co. Ltd.,
-        Nikkeisa Densen Seizai K.K., and Merdeka Corporation, as well as
-        local partners Mrs. Corry K. Djuwanta and Mr. Satrio Nugroho. Our
-        leadership team, headed by President Director Mrs. Corry K.
-        Djuwanta and supported by directors Mr. Toshio Sakuma and Mr.
-        Keiji Matsumura, is committed to maintaining the highest standards
-        in quality and innovation.
+        We are proud to have strong backing from both Japanese and Indonesian shareholders, including Nikkatsu Densen Seizo K.K., Mr. Minoru Otanaka, Merbabu Corporation, and Sakata Manufacturing Co. Ltd., as well as local partners Ms. Corry K. Djuwanta and Mr. Satrio Nugroho. Our leadership team, headed by President Director Ms. Corry K. Djuwanta and supported by directors Mr. Toshio Sakuma and Mr. Keiji Matsumura, is committed to maintaining the highest standards of quality and innovation.
       </p>
     </div>
     <div class="relative isolate px-6 pt-10 lg:px-8">
@@ -87,7 +79,7 @@
           <dl
             class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4"
           >
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="mx-auto flex w-48 items-center justify-center flex-col gap-y-4 bg-white p-6 rounded-lg">
               <dt class="text-base/7 text-gray-600">Founded</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -95,7 +87,7 @@
                 1974
               </dd>
             </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="mx-auto flex w-48 items-center justify-center flex-col gap-y-4 bg-white p-6 rounded-lg">
               <dt class="text-base/7 text-gray-600">Employees</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -103,7 +95,7 @@
                 2800+
               </dd>
             </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="mx-auto flex w-48 items-center justify-center flex-col gap-y-4 bg-white p-6 rounded-lg">
               <dt class="text-base/7 text-gray-600">Plants</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -111,7 +103,7 @@
                 2
               </dd>
             </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div class="mx-auto flex w-48 items-center justify-center flex-col gap-y-4 bg-white p-6 rounded-lg">
               <dt class="text-base/7 text-gray-600">Products</dt>
               <dd
                 class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -126,8 +118,8 @@
   </section>
 
   <!-- OUR STORY SECTION -->
-  <section>
-    <div class="container max-w-5xl px-4 py-12 mx-auto mt-10">
+  <section class="container mx-auto sm:px-44 py-16 mt-16">
+    <!-- <div class="container max-w-5xl px-4 py-12 mx-auto mt-10"> -->
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">
           <div
@@ -136,7 +128,7 @@
             <h3 class="text-3xl font-semibold">Our Story</h3>
             <!-- <span
               class="text-sm font-bold tracking-wider uppercase dark:text-gray-600"
-              >Vestibulum diam nunc</span
+              >Vestibulum diam nu nc</span
             > -->
           </div>
         </div>
@@ -154,7 +146,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >1974 - 1978</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7 text-justify">
                 <li>
                   1974: Founded in Bandung as a joint-venture company with a capital of USD 0.9 million.
                 </li>
@@ -193,7 +185,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >1986 - 1990</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7">
                 <li>
                 1986: Started manufacturing Electric Cables and increased capital to USD 1.35 million.
                 </li>
@@ -232,7 +224,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >1997 - 2001</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7 text-justify">
                 <li>
                   1997: Obtained approval from F Mark for cables.
                 </li>
@@ -268,7 +260,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >2002 - 2007</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7 text-justify">
                 <li>
                 2003: Moved Plant 2, Wiring Harness Dept. to Rancaekek Sumedang.
                 </li>
@@ -304,7 +296,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >2009 - 2014</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7 text-justify">
                 <li>
                 2009: Successfully updated ISO 9001:2008.
                 </li>
@@ -337,7 +329,7 @@
                 class="text-xs tracking-wide uppercase dark:text-gray-600"
                 >2017 - 2020</time
               >
-              <ul class="mt-3 mb-4">
+              <ul class="mt-3 mb-4 text-base text-gray-700 leading-7 text-justify">
                 <li>
                 2017: Successfully updated ISO 9001:2015 and ISO 14001:2015.
                 </li>
@@ -354,7 +346,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <!-- QA SECTION -->
@@ -366,7 +358,7 @@
     >
       Quality Control & TQA
     </h2>
-    <div class="text-base/7 text-gray-700">
+    <div class="text-base text-gray-700 leading-7 text-justify">
       <p class="mt-8">
         We are committed to the 5S Concept as a cornerstone of our
         management philosophy, emphasizing workplace cleanliness and
@@ -378,9 +370,9 @@
             <dl
               class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-5"
             >
-              <div class="grid grid-cols-1 justify-items-center">
-                <dt class="text-base/7 text-gray-600 pr-5">SEIRI</dt>
-                <dt class="text-base/7 text-gray-600 pr-5">SORT</dt>
+              <div class="grid grid-cols-1 justify-items-center bg-white rounded-lg p-6">
+                <dt class="text-base/7 text-gray-600">SEIRI</dt>
+                <dt class="text-base/7 text-gray-600">SORT</dt>
                 <dd
                   class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
                 >
@@ -391,9 +383,9 @@
                   />
                 </dd>
               </div>
-              <div class="grid grid-cols-1 justify-items-center">
-                <dt class="text-base/7 text-gray-600 pr-5">SEITON</dt>
-                <dt class="text-base/7 text-gray-600 pr-5">
+              <div class="grid grid-cols-1 justify-items-center bg-white rounded-lg p-6">
+                <dt class="text-base/7 text-gray-600">SEITON</dt>
+                <dt class="text-base/7 text-gray-600">
                   SET IN ORDER
                 </dt>
                 <dd
@@ -406,9 +398,9 @@
                   />
                 </dd>
               </div>
-              <div class="grid grid-cols-1 justify-items-center">
-                <dt class="text-base/7 text-gray-600 pr-5">SEISO</dt>
-                <dt class="text-base/7 text-gray-600 pr-5">SHINE</dt>
+              <div class="grid grid-cols-1 justify-items-center bg-white rounded-lg p-6">
+                <dt class="text-base/7 text-gray-600">SEISO</dt>
+                <dt class="text-base/7 text-gray-600">SHINE</dt>
                 <dd
                   class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
                 >
@@ -419,9 +411,9 @@
                   />
                 </dd>
               </div>
-              <div class="grid grid-cols-1 justify-items-center">
-                <dt class="text-base/7 text-gray-600 pr-5">SEIKETSU</dt>
-                <dt class="text-base/7 text-gray-600 pr-5">
+              <div class="grid grid-cols-1 justify-items-center bg-white rounded-lg p-6">
+                <dt class="text-base/7 text-gray-600">SEIKETSU</dt>
+                <dt class="text-base/7 text-gray-600">
                   STANDARDIZE
                 </dt>
                 <dd
@@ -434,9 +426,9 @@
                   />
                 </dd>
               </div>
-              <div class="grid grid-cols-1 justify-items-center">
-                <dt class="text-base/7 text-gray-600 pr-5">SHITSUKE</dt>
-                <dt class="text-base/7 text-gray-600 pr-5">SUSTAIN</dt>
+              <div class="grid grid-cols-1 justify-items-center bg-white rounded-lg p-6">
+                <dt class="text-base/7 text-gray-600">SHITSUKE</dt>
+                <dt class="text-base/7 text-gray-600">SUSTAIN</dt>
                 <dd
                   class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
                 >
@@ -503,7 +495,7 @@
     >
       Manpower & Training
     </h2>
-    <div class="text-base/7 text-gray-700">
+    <div class="text-base text-gray-700 leading-7 text-justify">
       <p class="mt-8 text-center">
         At PT EWINDO, we view our employees as one of our most valuable
         assets. By implementing a thorough selection process, appropriate
@@ -522,7 +514,7 @@
                   class="card__content text-center relative p-20 transition-transform duration-1000 text-black font-bold"
                 >
                   <div
-                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-white flex items-center justify-center"
+                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-gray-200 flex items-center justify-center"
                   >
                     <img
                       src="assets/Icon/Manpower/6.png"
@@ -531,12 +523,12 @@
                     />
                   </div>
                   <div
-                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-white flex items-center justify-center"
+                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-gray-200 flex items-center justify-center"
                   >
-                    <h2>
+                    <p class="text-sm/6 p-2 font-semibold">
                       Every employees should maintain both spiritual and
                       physical well-being.
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -545,7 +537,7 @@
                   class="card__content text-center relative p-20 transition-transform duration-1000 text-black font-bold"
                 >
                   <div
-                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-white flex items-center justify-center"
+                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-gray-200 flex items-center justify-center"
                   >
                     <img
                       src="assets/Icon/Manpower/7.png"
@@ -554,12 +546,12 @@
                     />
                   </div>
                   <div
-                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-white flex items-center justify-center"
+                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-gray-200 flex items-center justify-center"
                   >
-                    <h2>
+                    <p class="text-sm/6 p-2 font-semibold">
                       Employees must demonstrate sincere commitment and
                       dedication to their work.
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -568,7 +560,7 @@
                   class="card__content text-center relative p-20 transition-transform duration-1000 text-black font-bold"
                 >
                   <div
-                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-white flex items-center justify-center"
+                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-gray-200 flex items-center justify-center"
                   >
                     <img
                       src="assets/Icon/Manpower/9.png"
@@ -577,12 +569,12 @@
                     />
                   </div>
                   <div
-                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-white flex items-center justify-center"
+                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-gray-200 flex items-center justify-center"
                   >
-                    <h2>
+                    <p class="text-sm/6 p-2 font-semibold">
                       Knowledge and intelligence are essential for every
                       employees.
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -591,7 +583,7 @@
                   class="card__content text-center relative p-20 transition-transform duration-1000 text-black font-bold"
                 >
                   <div
-                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-white flex items-center justify-center"
+                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-gray-200 flex items-center justify-center"
                   >
                     <img
                       src="assets/Icon/Manpower/8.png"
@@ -600,12 +592,12 @@
                     />
                   </div>
                   <div
-                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-white flex items-center justify-center"
+                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-gray-200 flex items-center justify-center"
                   >
-                    <h2>
+                    <p class="text-sm/6 p-2 font-semibold">
                       Professionalism should be exhibited in all tasks
                       undertaken.
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -614,7 +606,7 @@
                   class="card__content text-center relative p-20 transition-transform duration-1000 text-black font-bold"
                 >
                   <div
-                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-white flex items-center justify-center"
+                    class="card__front absolute top-0 bottom-0 right-0 left-0 p-8 bg-gray-200 flex items-center justify-center"
                   >
                     <img
                       src="assets/Icon/Manpower/10.png"
@@ -623,12 +615,12 @@
                     />
                   </div>
                   <div
-                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-white flex items-center justify-center"
+                    class="card__back absolute top-0 bottom-0 right-0 left-0 bg-gray-200 flex items-center justify-center"
                   >
-                    <h2>
+                    <p class="text-sm/6 p-2 font-semibold">
                       Every employee should believe in a positive and
                       promising future.
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -654,42 +646,39 @@
     >
       Certificates
     </h2>
-    <div class="swiper swiper-certificate mt-10">
+    <div class="swiper swiper-certificate mt-10 px-10">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <a href="#" onclick="openModal(event, '/assets/sertifikat/Sertifikat-ISO-14001-2015/Sertifikat ISO 14001 2015_page-0001.jpg')">
+
+            </a>
+            <img src="/assets/sertifikat/Sertifikat-ISO-14001-2015/Sertifikat ISO 14001 2015_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <img src="/assets/sertifikat/Sertifikat-ISO-9001-2015/Sertifikat ISO 9001 2015_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <img src="/assets/sertifikat/Sertifikat-SNI-ISO-9001-2015/Sertifikat SNI ISO 9001 2015_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <img src="/assets/sertifikat/Nondetachable-Power-Supply-Cords---General-Use/Nondetachable Power Supply Cords - General Use_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <img src="/assets/sertifikat/Detachable-Power-Supply-Cords---General-Use/Detachable Power Supply Cords - General Use_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
-            <span>Certificate Placeholder</span>
-            <span>256x352</span>
+            <img src="/assets/sertifikat/CORD-SETS-AND-POWER-SUPPLY-CORDS/CORD SETS AND POWER-SUPPLY CORDS_page-0001.jpg" alt="">
           </div>
         </div>
       </div>

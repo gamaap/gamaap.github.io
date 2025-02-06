@@ -5,20 +5,10 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto">
+<main class="mb-auto pt-20">
   <section class="container mx-auto px-10 py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800">
     <div class="mx-auto w-full max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert pl-5">
       <header class="mb-4 lg:mb-6 not-format">
-        <address class="flex items-center mb-6 not-italic">
-          <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-            <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
-            <div>
-              <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-gray-800">John Doe</a>
-              <p class="text-base text-gray-700 dark:text-gray-600">Administrator</p>
-              <p class="text-base text-gray-700 dark:text-gray-600"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Feb. 4, 2025</time></p>
-            </div>
-          </div>
-        </address>
         <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-gray-800">Best practices for creating nice catchy title</h1>
       </header>
     </div>
@@ -29,7 +19,6 @@
               src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" 
               alt="Main Image">
       </div>
-
       <!-- Smaller images grid with total width equal to main image -->
       <div class="w-3/5 grid grid-cols-4 gap-4">
         <div>
@@ -66,6 +55,18 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid delectus itaque error, ducimus at ipsam deserunt, a ex, vel repellendus iusto obcaecati. Ad hic, quas voluptatem consequuntur error facilis, sequi cupiditate fuga numquam non similique? Veniam fugit dolore corrupti quia, ratione harum atque voluptatum id debitis sapiente explicabo neque.
       </p>
     </article>
+    <div class="flex flex-col gap-4 items-center mt-12">
+      <address class="flex items-center not-italic">
+        <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+          <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
+          <div>
+            <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-gray-800">John Doe</a>
+            <p class="text-base text-gray-700 dark:text-gray-600">Administrator</p>
+            <p class="text-base text-gray-700 dark:text-gray-600"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Feb. 4, 2025</time></p>
+          </div>
+        </div>
+      </address>
+    </div>
     <div class="mx-auto mt-10 w-3/5 border-t border-gray-300 pt-10"></div>
     <section class="bg-gray-100 py-4">
       <div class="text-center mb-6">

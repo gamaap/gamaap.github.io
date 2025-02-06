@@ -8,19 +8,19 @@
 <main class="mb-auto">
   <!-- UPPER CONTENT AND IMAGES SLIDER SECTION-->
   <section
-    class="container mx-auto px-44 py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800"
+    class="container mx-auto px-44 max-w-full py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800"
   >
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
     >
       <div class="flex flex-col justify-center lg:justify-start">
         <h1
-          class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
+          class="text-balance text-5xl/12 font-semibold tracking-tight text-yellow-500 sm:text-6xl lg:text-5xl uppercase"
         >
           We Produce Any Cables & Wires that Deliver Electricity
         </h1>
         <p
-          class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
+          class="mt-8 text-base text-gray-700 leading-7 text-justify"
         >
           PT EWINDO is a joint venture between Japan and Indonesia,
           established on May 10, 1974. Initially focused on producing
@@ -30,7 +30,7 @@
           supply cords, and wiring harnesses.
         </p>
         <div class="mt-10 flex items-center gap-x-6">
-          <a href="#" class="text-sm/6 font-semibold text-gray-900"
+          <a href="company.php" class="text-sm/6 font-semibold text-gray-900"
             >See more <span aria-hidden="true">→</span></a
           >
         </div>
@@ -77,13 +77,11 @@
   </section>
 
   <!-- LOWER CONTENT BELOW THE IMAGES SLIDER SECTION -->
-  <section class="container mx-auto sm:px-44 py-5 mt-16">
+  <section class="container mx-auto sm:px-44 py-16 mt-8">
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center sm:py-16"
     >
-      <div
-        class="relative h-[600px] rounded-2xl overflow-hidden shadow-lg"
-      >
+      <div class="relative h-[600px] rounded-2xl overflow-hidden shadow-lg">
         <img
           src="assets/main-page.jpg"
           alt="Image 1"
@@ -92,28 +90,26 @@
       </div>
 
       <div class="flex flex-col justify-center lg:justify-start">
-        <p class="mt-2 text-pretty text-lg text-base/7 text-gray-700">
-          We are proud to have a team of over 3,000 dedicated employees
-          working across two plants:
+        <p class="mt-2 text-base text-gray-700 leading-7 text-justify">
+          We are proud to have a team of over 3,000 dedicated employees working
+          across two plants:
         </p>
-        <p class="mt-8 text-pretty text-lg text-base/7 text-gray-700">
-          Plant1<br />Located at Jalan Cimuncang No. 68 in Bandung,
-          specializes in producing magnet wire, a variety of cables
-          (including electronic, automotive, and UL/CSA), and power supply
-          cords on a 2.4-hectare site.
+        <p class="mt-8 text-base text-gray-700 leading-7 text-justify">
+          Plant1<br />Located at Jalan Cimuncang No. 68 in Bandung, specializes in
+          producing magnet wire, a variety of cables (including electronic,
+          automotive, and UL/CSA), and power supply cords on a 2.4-hectare site.
         </p>
-        <p class="mt-8 text-pretty text-lg text-base/7 text-gray-700">
-          Plant 2<br />situated on a 2.5-hectare plot at Jalan Rancaekek
-          KM 24.5 within the Dwipapuri Industrial Estate, focuses on
-          wiring harnesses for both electronic and automotive
-          applications.
+        <p class="mt-8 text-base text-gray-700 leading-7 text-justify">
+          Plant 2<br />situated on a 2.5-hectare plot at Jalan Rancaekek KM 24.5
+          within the Dwipapuri Industrial Estate, focuses on wiring harnesses for
+          both electronic and automotive applications.
         </p>
-        <p class="mt-8 text-pretty text-lg text-base/7 text-gray-700">
-          At PT EWINDO, we are committed to delivering high-quality
-          products, supported by skilled personnel and reliable machinery.
-          We invest significantly in employee training, as we believe that
-          a knowledgeable and competent workforce is essential for
-          enhancing productivity and improving product quality.
+        <p class="mt-8 text-base text-gray-700 leading-7 text-justify">
+          At PT EWINDO, we are committed to delivering high-quality products,
+          supported by skilled personnel and reliable machinery. We invest
+          significantly in employee training, as we believe that a knowledgeable
+          and competent workforce is essential for enhancing productivity and
+          improving product quality.
         </p>
       </div>
     </div>
@@ -122,36 +118,27 @@
   <!-- VISION AND MISSION SECTION -->
   <section class="container mx-auto sm:px-44 mt-16">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-      <div
-        class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800"
-      >
+      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800">
         <h2
           class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-center lg:text-center"
         >
           Vision
         </h2>
-        <p
-          class="text-gray-700 leading-relaxed text-center lg:text-center"
-        >
-          To be a leading and distinguished company in Magnet Wire,
-          Electric & Automotive Cable, Power Supply Cord, and Wiring
-          Harness Industry in Indonesia with international standard.
+        <p class="text-base text-gray-700 leading-7 text-center lg:text-center">
+          To be a leading and distinguished company in Magnet Wire, Electric &
+          Automotive Cable, Power Supply Cord, and Wiring Harness Industry in
+          Indonesia with international standard.
         </p>
       </div>
-      <div
-        class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800"
-      >
+      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800">
         <h2
           class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-center lg:text-center"
         >
           Mission
         </h2>
-        <p
-          class="text-gray-700 leading-relaxed text-center lg:text-center"
-        >
+        <p class="text-base text-gray-700 leading-7 text-center lg:text-center">
           To guarantee customers, employees, and publics satisfaction by
-          delivering products through prioritizing on the following
-          factors:
+          delivering products through prioritizing on the following factors:
         </p>
         <ul
           class="list-disc pl-6 mt-4 text-gray-700 leading-relaxed text-center lg:text-center"
@@ -363,8 +350,8 @@
         >
           <p>
             “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            expedita voluptas culpa sapiente alias molestiae. Numquam
-            corrupti in laborum sed rerum et corporis.”
+            expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
+            laborum sed rerum et corporis.”
           </p>
         </blockquote>
       </figure>
@@ -378,7 +365,7 @@
 
   <!-- JOIN OUR TEAMS SECTION -->
   <section
-    class="container mx-auto sm:px-44 py-10 mt-16 dark:bg-gray-100 dark:text-gray-800"
+    class="container mx-auto sm:px-44 py-10 mt-16 pb-16 dark:bg-gray-100 dark:text-gray-800"
   >
     <div
       class="max-w-4xl mx-auto p-14 bg-white flex flex-col md:flex-row items-center sm:py-14"
@@ -392,12 +379,11 @@
         />
       </div>
       <div class="md:w-1/2 md:pl-8 md:mt-0 flex flex-col justify-center">
-        <p class="text-gray-700 mt-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at
-          fringilla id maecenas in scelerisque in. Pharetra, erat amet,
-          vestibulum ullamcorper. Nunc feugiat lacus et eget urna ornare
-          risus malesuada. Cursus morbi vel sed ipsum eget tincidunt
-          ultrices.
+        <p class="text-gray-700 leading-7 text-justify mt-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at fringilla
+          id maecenas in scelerisque in. Pharetra, erat amet, vestibulum
+          ullamcorper. Nunc feugiat lacus et eget urna ornare risus malesuada.
+          Cursus morbi vel sed ipsum eget tincidunt ultrices.
         </p>
         <button class="bg-gray-800 text-white px-6 py-2 rounded-lg mt-6">
           Apply
@@ -405,6 +391,7 @@
       </div>
     </div>
   </section>
+
 </main>
 
 <!-- FOOTER SECTION -->
