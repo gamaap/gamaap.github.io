@@ -5,10 +5,21 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto pt-20">
+<main class="mb-auto">
+  <section class="container mx-auto px-44 py-24 sticky top-0">
+    <nav class="flex justify-between items-center">
+      <a href="#about" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">About Us</a>
+      <a href="#story" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Our Story</a>
+      <a href="#quality" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Quality Control & TQA</a>
+      <a href="#manpower" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Manpower & Training</a>
+      <a href="#certificates" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Certificates</a>
+      <a href="#quality-acc" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Quality Accreditations</a>
+    </nav>
+  </section>
+
   <!-- ABOUT US SECTION -->
   <section
-    class="container mx-auto px-44 py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800"
+    class="container mx-auto px-44 py-20 sm:mt-20 dark:bg-gray-100 dark:text-gray-800" id="about"
   >
     <h1
       class="text-5xl font-bold text-yellow-500 text-pretty text-center"
@@ -44,7 +55,7 @@
 
           <span
             ><strong class="font-semibold text-gray-900">Plant 1 :</strong>
-            Located at Jalan Cimuncang No. 68 in Bandung, it specializes in producing magnet wire, a variety of cables (including electronic, automotive, and UL/CSA), and power supply cords on a 2.4-hectare site.
+            Located at Jalan Cimuncang No. 68 in Bandung, it specializes in producing magnet wire, a variety of cables (including electronic, automotive, and UL/c-UL), and power supply cords on a 2.4-hectare site.
           </span
           >
         </li>
@@ -118,7 +129,7 @@
   </section>
 
   <!-- OUR STORY SECTION -->
-  <section class="container mx-auto sm:px-44 py-16 mt-16">
+  <section class="container mx-auto sm:px-44 py-16 mt-16" id="story">
     <!-- <div class="container max-w-5xl px-4 py-12 mx-auto mt-10"> -->
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">
@@ -351,7 +362,7 @@
 
   <!-- QA SECTION -->
   <section
-    class="container mx-auto sm:px-44 py-20 mt-16 dark:bg-gray-100 dark:text-gray-800"
+    class="container mx-auto sm:px-44 py-20 mt-16 dark:bg-gray-100 dark:text-gray-800" id="quality"
   >
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -489,7 +500,7 @@
   </section>
 
   <!-- MANPOWER SECTION -->
-  <section class="container mx-auto sm:px-44 py-5 mt-16">
+  <section class="container mx-auto sm:px-44 py-5 mt-16" id="manpower">
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -640,7 +651,7 @@
   </section>
 
   <!-- HONOR CERTIFICATE SECTION -->
-  <section class="container mx-auto sm:px-44 py-20 mt-16 lg:mt-16 dark:bg-gray-100 dark:text-gray-800">
+  <section class="container mx-auto sm:px-44 py-20 mt-16 lg:mt-16 dark:bg-gray-100 dark:text-gray-800" id="certificates">
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -688,14 +699,53 @@
     </div>
   </section>
 
-  <!-- CERTIFICATE LOGO SECTION -->
-  <section class="container mx-auto sm:px-44 py-20 pb-20">
+  <!-- QUALITY ACCREDITATION SECTION -->
+  <section class="container mx-auto sm:px-44 py-20 pb-20" id="quality-acc">
     <h2
       class="mt-2 py-10 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
       Quality Accreditations
     </h2>
     <div
+      class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+    >
+      <img
+        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+        src="/assets/quality-accreditations/17.png"
+        alt="Transistor"
+        width="158"
+        height="48"
+      />
+      <img
+        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+        src="/assets/quality-accreditations/18.png"
+        alt="Reform"
+        width="158"
+        height="48"
+      />
+      <img
+        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+        src="/assets/quality-accreditations/19.png"
+        alt="Tuple"
+        width="158"
+        height="48"
+      />
+      <img
+        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+        src="/assets/quality-accreditations/20.png"
+        alt="SavvyCal"
+        width="158"
+        height="48"
+      />
+      <img
+        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+        src="/assets/quality-accreditations/21.png"
+        alt="SavvyCal"
+        width="158"
+        height="48"
+      />
+    </div>
+    <!-- <div
       class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4"
     >
       <img
@@ -758,39 +808,7 @@
         width="158"
         height="48"
       />
-    </div>
-    <div
-      class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4"
-    >
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
-        alt="Transistor"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
-        alt="Reform"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
-        alt="Tuple"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
-        alt="SavvyCal"
-        width="158"
-        height="48"
-      />
-    </div>
+    </div> -->
   </section>
 </main>
 

@@ -15,12 +15,26 @@
 
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: "Montserrat", sans-serif;
       }
 
       p, ul, li {
         font-family: "Open Sans", serif;
+      }
+
+      .swiper-pagination-bullet {
+        background: gray;
+        opacity: 0.6;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #D1B312;
+        opacity: 1;
       }
 
       /* .swiper-slide {

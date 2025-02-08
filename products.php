@@ -5,11 +5,11 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto pt-20">
+<main class="mb-auto">
   <!-- PRODUCTS PARAGRAPH PAGE -->
-  <section class="container mx-auto sm:px-44 py-16 mt-16 text-center">
+  <section class="container mx-auto sm:px-44 py-20 mt-16 text-center">
     <h1 class="text-5xl font-bold text-yellow-500">Products</h1>
-    <p class="mt-6 text-lg">
+    <p class="mt-6 text-base text-gray-700 leading-7 text-center">
       PT EWINDO offers a diverse range of products, including bare
       conductors such as Enameled Round Copper Wires, Annealed and
       Tin-Annealed Copper Wires, Electric Cables, Automotive Cables, Power
@@ -18,7 +18,7 @@
       industry standards and certifications, including SII/LMK/SPLN, UL,
       ULC/UL, CSA, DENTORI, -F- Mark, CEE, and AS Approved.
     </p>
-    <p class="mt-4 text-lg">
+    <p class="mt-4 text-base text-gray-700 leading-7 text-center">
       We are committed to the principles of customer satisfaction and
       quality excellence, continuously enhancing our quality management
       system. Our commitment is reflected in our certifications, which

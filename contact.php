@@ -10,18 +10,18 @@
   <section class="container mx-auto sm:px-44 pt-20 mt-8">
     <div class="w-full rounded-xl overflow-hidden shadow-lg">
       <div
-        class="w-full min-h-[400px] bg-top bg-cover flex items-center justify-center"
+        class="w-full min-h-[400px] bg-top bg-cover flex items-end p-6"
         style="
           background-image: url(/assets/hero/1.png);
         "
       >
         <div
-          class="flex items-center justify-center w-full h-full py-12"
+          class="flex items-start justify-items-start w-full h-full py-6"
         >
-          <div class="text-center">
-            <div class="container px-4 mx-auto">
-              <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-extrabold tracking-wide text-gray-900 sm:text-4xl uppercase bg-white/80 px-4 py-2 rounded-lg">
+          <div class="text-left">
+            <div class="container mx-auto">
+              <div class="max-w-4xl mx-auto text-left">
+                <h2 class="text-4xl font-extrabold tracking-wide text-yellow-500 sm:text-4xl uppercase px-4 py-2 rounded-lg shadow-text" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);">
                   Contact Us
                 </h2>
               </div>

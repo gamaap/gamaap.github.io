@@ -16,13 +16,27 @@
           el: ".swiper-pagination-index",
           clickable: true,
         },
+      });
+      
+      // Swiper for main page (plant 1 & 2)
+      const swiperPlant = new Swiper(".swiper-plant", {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next-index",
-          prevEl: ".swiper-button-prev-index",
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination-plant",
+          clickable: true,
         },
       });
+      
 
       // Swiper for certificate
       const swiperCertificate = new Swiper(".swiper-certificate", {
@@ -33,6 +47,18 @@
           nextEl: ".swiper-button-next-certificate",
           prevEl: ".swiper-button-prev-certificate",
         },
+      });
+
+      // Document Fragments
+      document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll(".nav-link");
+
+        function setActiveLink() {
+          links.forEach(link => link.classList.remove("border-b-4", "border-yellow-500"));
+          this.classList.add("border-b-4", "border-yellow-500");
+        }
+
+        links.forEach(link => link.addEventListener("click", setActiveLink));
       });
     </script>
   </body>

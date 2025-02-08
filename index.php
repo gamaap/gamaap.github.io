@@ -8,7 +8,7 @@
 <main class="mb-auto">
   <!-- UPPER CONTENT AND IMAGES SLIDER SECTION-->
   <section
-    class="container mx-auto px-44 max-w-full py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800"
+    class="container mx-auto px-44 max-w-full py-20 mt-20 dark:bg-gray-100 dark:text-gray-800"
   >
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
@@ -41,36 +41,34 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
-                src="assets/main-page.jpg"
+                src="assets/main/plant1.jpg"
                 alt="Image 1"
                 class="object-cover w-full h-full rounded-lg shadow-lg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="assets/main-page.jpg"
+                src="assets/main/plant1.jpg"
                 alt="Image 2"
                 class="object-cover w-full h-full rounded-lg shadow-lg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="assets/main-page.jpg"
+                src="assets/main/plant1.jpg"
                 alt="Image 3"
                 class="object-cover w-full h-full rounded-lg shadow-lg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="assets/main-page.jpg"
+                src="assets/main/plant1.jpg"
                 alt="Image 4"
                 class="object-cover w-full h-full rounded-lg shadow-lg"
               />
             </div>
           </div>
           <div class="swiper-pagination swiper-pagination-index"></div>
-          <div class="swiper-button-next swiper-button-next-index"></div>
-          <div class="swiper-button-prev swiper-button-prev-index"></div>
         </div>
       </div>
     </div>
@@ -81,26 +79,40 @@
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center sm:py-16"
     >
-      <div class="relative h-[600px] rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="assets/main-page.jpg"
-          alt="Image 1"
-          class="object-cover w-full h-full rounded-lg shadow-lg"
-        />
+      <div class="relative rounded-2xl overflow-hidden shadow-lg">
+        <div class="swiper swiper-plant">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="assets/main/plant1.jpg"
+                alt="Image 1"
+                class="object-cover w-full h-full rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/main/plant2.png"
+                alt="Image 1"
+                class="object-fill w-full h-full rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-plant"></div>
+        </div>
       </div>
 
       <div class="flex flex-col justify-center lg:justify-start">
         <p class="mt-2 text-base text-gray-700 leading-7 text-justify">
-          We are proud to have a team of over 3,000 dedicated employees working
+          We are proud to have a team of over 2,800 dedicated employees working
           across two plants:
         </p>
         <p class="mt-8 text-base text-gray-700 leading-7 text-justify">
           Plant1<br />Located at Jalan Cimuncang No. 68 in Bandung, specializes in
           producing magnet wire, a variety of cables (including electronic,
-          automotive, and UL/CSA), and power supply cords on a 2.4-hectare site.
+          automotive, and UL/c-UL), and power supply cords on a 2.4-hectare site.
         </p>
         <p class="mt-8 text-base text-gray-700 leading-7 text-justify">
-          Plant 2<br />situated on a 2.5-hectare plot at Jalan Rancaekek KM 24.5
+          Plant 2<br />Situated on a 2.5-hectare plot at Jalan Rancaekek KM 24.5
           within the Dwipapuri Industrial Estate, focuses on wiring harnesses for
           both electronic and automotive applications.
         </p>
@@ -116,13 +128,18 @@
   </section>
 
   <!-- VISION AND MISSION SECTION -->
-  <section class="container mx-auto sm:px-44 mt-16">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800">
+  <section class="container mx-auto sm:px-44">
+    <h2
+      class="mt-2 mb-16 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+    >
+      Vision and Mission
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800 rounded-lg">
         <h2
           class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-center lg:text-center"
         >
-          Vision
+          Our <br><span class="text-2xl lg:text-3xl font-bold text-yellow-500 mb-4 lg:mb-6 text-center lg:text-center">Vision</span>
         </h2>
         <p class="text-base text-gray-700 leading-7 text-center lg:text-center">
           To be a leading and distinguished company in Magnet Wire, Electric &
@@ -130,17 +147,16 @@
           Indonesia with international standard.
         </p>
       </div>
-      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800">
+      <div class="bg-white p-8 lg:p-12 dark:bg-gray-100 dark:text-gray-800 rounded-lg">
         <h2
           class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-center lg:text-center"
         >
-          Mission
+          Our <br><span class="text-2xl lg:text-3xl font-bold text-yellow-500 mb-4 lg:mb-6 text-center lg:text-center">Mission</span>
         </h2>
         <p class="text-base text-gray-700 leading-7 text-center lg:text-center">
-          To guarantee customers, employees, and publics satisfaction by
-          delivering products through prioritizing on the following factors:
+          At PT. Ewindo, we are committed to guaranteeing the satisfaction of our customers, employees, and the public by delivering products that prioritize <span class="font-semibold">quality, cost, delivery, safety, moral integrity, and environmental responsibility.</span>
         </p>
-        <ul
+        <!-- <ul
           class="list-disc pl-6 mt-4 text-gray-700 leading-relaxed text-center lg:text-center"
           style="list-style-type: none"
         >
@@ -150,13 +166,13 @@
           <li>SAFETY</li>
           <li>MORAL</li>
           <li>ENVIRONMENTAL</li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </section>
 
   <!-- BOARD OF DIRECTOR SECTION -->
-  <section class="container mx-auto sm:px-44 py-10 mt-16">
+  <section class="container mx-auto sm:px-44 py-10 mt-32">
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -166,35 +182,35 @@
       <div class="text-center">
         <img
           alt="Portrait of COO Patrick Star"
-          class="rounded-full"
+          class="rounded-full mt-8"
           height="150"
-          src="https://storage.googleapis.com/a1aa/image/AqSikHpUnda8D17gOgFojAd1mOF28gK6RXakmsRxgayXFuBF.jpg"
+          src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
           width="150"
         />
-        <p class="mt-2 font-bold">COO</p>
-        <p>Patrick Star</p>
+        <p class="mt-2 font-bold">Position</p>
+        <p>Name</p>
       </div>
       <div class="text-center">
         <img
           alt="Portrait of COO Patrick Star"
           class="rounded-full"
-          height="150"
-          src="https://storage.googleapis.com/a1aa/image/AqSikHpUnda8D17gOgFojAd1mOF28gK6RXakmsRxgayXFuBF.jpg"
-          width="150"
+          height="200"
+          src="/assets/board/corry.png"
+          width="200"
         />
-        <p class="mt-2 font-bold">COO</p>
-        <p>Patrick Star</p>
+        <p class="mt-2 font-bold">President Director</p>
+        <p>Corry K. Djuwanta</p>
       </div>
       <div class="text-center">
         <img
           alt="Portrait of COO Patrick Star"
-          class="rounded-full"
+          class="rounded-full mt-8"
           height="150"
-          src="https://storage.googleapis.com/a1aa/image/AqSikHpUnda8D17gOgFojAd1mOF28gK6RXakmsRxgayXFuBF.jpg"
+          src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
           width="150"
         />
-        <p class="mt-2 font-bold">COO</p>
-        <p>Patrick Star</p>
+        <p class="mt-2 font-bold">Position</p>
+        <p>Name</p>
       </div>
     </div>
   </section>
@@ -214,35 +230,34 @@
       >
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
+          src="/assets/customers-logo/9.png"
           alt="Transistor"
-          width="158"
-          height="48"
+          width="494"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
+          src="/assets/customers-logo/2.png"
           alt="Reform"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
+          src="/assets/customers-logo/3.png"
           alt="Tuple"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
+          src="/assets/customers-logo/4.png"
           alt="SavvyCal"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg"
+          src="/assets/customers-logo/5.png"
           alt="Statamic"
           width="158"
           height="48"
@@ -253,35 +268,35 @@
       >
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
+          src="/assets/customers-logo/6.png"
           alt="Transistor"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
+          src="/assets/customers-logo/7.png"
           alt="Reform"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
+          src="/assets/customers-logo/8.png"
           alt="Tuple"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
+          src="/assets/customers-logo/1.png"
           alt="SavvyCal"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg"
+          src="/assets/customers-logo/10.png"
           alt="Statamic"
           width="158"
           height="48"
@@ -292,40 +307,41 @@
       >
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
+          src="/assets/customers-logo/11.png"
           alt="Transistor"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
+          src="/assets/customers-logo/12.png"
           alt="Reform"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
+          src="/assets/customers-logo/13.png"
           alt="Tuple"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
+          src="/assets/customers-logo/14.png"
           alt="SavvyCal"
           width="158"
           height="48"
         />
         <img
           class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg"
+          src="/assets/customers-logo/15.png"
           alt="Statamic"
           width="158"
           height="48"
         />
       </div>
+      <p class="text base text-gray-700 font-semibold leading-7 text-center mt-12">and more...</p>
     </div>
   </section>
 
@@ -346,7 +362,7 @@
     <div class="mx-auto max-w-2xl lg:max-w-4xl">
       <figure class="mt-10">
         <blockquote
-          class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9"
+          class="text-center text-xl/8 text-gray-900 sm:text-2xl/9"
         >
           <p>
             “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -357,7 +373,7 @@
       </figure>
       <img
         class="mx-auto h-12 mt-4"
-        src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
+        src="https://tailwindui.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
         alt=""
       />
     </div>
@@ -375,23 +391,19 @@
         <img
           alt="A group of diverse people working together on laptops"
           class="w-full rounded-lg h-48 object-cover"
-          src="https://storage.googleapis.com/a1aa/image/9HXhBZdewDwXdakMO3h5zwChoiAGpf2iBtsDjZXAA7xTMLHUA.jpg"
+          src="/assets/hero/joinus.jpg"
         />
       </div>
       <div class="md:w-1/2 md:pl-8 md:mt-0 flex flex-col justify-center">
         <p class="text-gray-700 leading-7 text-justify mt-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at fringilla
-          id maecenas in scelerisque in. Pharetra, erat amet, vestibulum
-          ullamcorper. Nunc feugiat lacus et eget urna ornare risus malesuada.
-          Cursus morbi vel sed ipsum eget tincidunt ultrices.
+          Take the leap and become part of the PT Ewindo success story! We are looking for passionate, driven individuals to help shape the future of our industry. Your career journey starts here!
         </p>
-        <button class="bg-gray-800 text-white px-6 py-2 rounded-lg mt-6">
+        <a href="career.php" class="bg-yellow-500 text-white text-center px-6 py-2 rounded-lg mt-6">
           Apply
-        </button>
+        </a>
       </div>
     </div>
   </section>
-
 </main>
 
 <!-- FOOTER SECTION -->
