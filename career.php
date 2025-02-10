@@ -21,9 +21,9 @@
                 <div class="text-left">
                 <div class="container mx-auto">
                     <div class="max-w-4xl mx-auto text-left">
-                    <h2 class="text-4xl font-extrabold tracking-wide text-yellow-500 sm:text-4xl uppercase shadow-text px-4 py-2 rounded-lg" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);">
-                        Join Us
-                    </h2>
+                        <h2 class="text-4xl font-extrabold tracking-wide text-yellow-500 sm:text-4xl uppercase shadow-text px-4 py-2 rounded-lg" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);">
+                            Join Us
+                        </h2>
                     </div>
                 </div>
                 </div>

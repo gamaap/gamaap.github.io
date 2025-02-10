@@ -104,7 +104,7 @@
                 <label for="country" class="block mb-2 text-sm font-medium text-gray-900">Country</label>
                 <input type="text" name="country" id="country" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" required>
               </div>
-              <div class="col-span-10">
+              <div id="select-container" class="col-span-10">
                 <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
                 <select id="subject" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                   <option selected disabled>Subject</option>
@@ -116,15 +116,21 @@
                   <option value="other">Other</option>
                 </select>
               </div>
+              
+              <!-- Placeholder for the input box -->
+              <div id="quotation-box" class="col-span-5 hidden">
+                <label for="quotation-input" class="block mb-2 text-sm font-medium text-gray-900">Quotation Details</label>
+                <input type="text" id="quotation-input" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Enter Product">
+              </div>
               <div class="col-span-10">
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message</label>
                 <textarea id="message" name="message" class="resize-y block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
               </div>
             </div>
         </div>
-      <div class="flex items-center justify-center">
-        <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-md font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request</button>
-      </div>
+        <div class="flex items-center justify-center">
+          <button type="submit" class="rounded-md bg-yellow-500 px-3 py-2 text-md font-semibold text-white shadow-xs hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500">Request</button>
+        </div>
     </form>
   </section>
 

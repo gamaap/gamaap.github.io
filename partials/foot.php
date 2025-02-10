@@ -108,6 +108,20 @@
         });
       });
 
+      // Event for Request A Quotation in Contact Page
+      document.getElementById("subject").addEventListener("change", function () {
+        const selectContainer = document.getElementById("select-container");
+        const quotationBox = document.getElementById("quotation-box");
+
+        if (this.value === "quotation") {
+          selectContainer.classList.replace("col-span-10", "col-span-5"); // Shrink select box
+          quotationBox.classList.remove("hidden"); // Show text input
+        } else {
+          selectContainer.classList.replace("col-span-5", "col-span-10"); // Restore full width
+          quotationBox.classList.add("hidden"); // Hide text input
+        }
+      });
+
     </script>
     <!-- Modal (Hidden by Default) -->
     <div id="imageModal" class="fixed inset-0 z-[9999] hidden bg-black bg-opacity-75 flex items-center justify-center">

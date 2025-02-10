@@ -42,6 +42,11 @@
         opacity: 1;
       }
 
+      .swiper-button-prev-certificate, 
+      .swiper-button-next-certificate {
+        color: #D1B312;
+      }
+
       /* .swiper-slide {
         opacity: 0.4;
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
