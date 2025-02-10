@@ -6,11 +6,11 @@
   
 <!-- MAIN CONTENT -->
 <main class="mb-auto pt-20">
-  <section class="container mx-auto sm:px-44 py-10 my-32">
+  <section class="container mx-auto sm:px-44 my-32">
     <h2
       class="text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
-      <span class="text-blue-500">Job Title</span> <br> Registration Form
+      <span class="text-yellow-500">Job Title</span> <br> Registration Form
     </h2>
     <form>
       <div class="space-y-12 mt-8">

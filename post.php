@@ -5,8 +5,8 @@
 <?php require 'partials/header.php' ?>
   
 <!-- MAIN CONTENT -->
-<main class="mb-auto pt-20">
-  <section class="container mx-auto px-10 py-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800">
+<main class="mb-auto">
+  <section class="container mx-auto px-10 py-20 pt-20 sm:mt-24 dark:bg-gray-100 dark:text-gray-800">
     <div class="mx-auto w-full max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert pl-5">
       <header class="mb-4 lg:mb-6 not-format">
         <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-gray-800">Best practices for creating nice catchy title</h1>
@@ -55,14 +55,14 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid delectus itaque error, ducimus at ipsam deserunt, a ex, vel repellendus iusto obcaecati. Ad hic, quas voluptatem consequuntur error facilis, sequi cupiditate fuga numquam non similique? Veniam fugit dolore corrupti quia, ratione harum atque voluptatum id debitis sapiente explicabo neque.
       </p>
     </article>
-    <div class="flex flex-col gap-4 items-center mt-12">
-      <address class="flex items-center not-italic">
-        <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+    <div class="flex flex-col gap-4 items-end mt-12">
+      <address class="flex items-end not-italic">
+        <div class="inline-flex items-end mr-72 text-sm text-gray-900 dark:text-white">
           <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
           <div>
             <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-gray-800">John Doe</a>
             <p class="text-base text-gray-700 dark:text-gray-600">Administrator</p>
-            <p class="text-base text-gray-700 dark:text-gray-600"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Feb. 4, 2025</time></p>
+            <p class="text-base text-gray-700 dark:text-gray-600"><time pubdate datetime="2025-02-04">Feb. 4, 2025</time></p>
           </div>
         </div>
       </address>
@@ -75,7 +75,7 @@
       </div>
       <div class="text-center">
         <a href="newsroom.php">
-        <button class="bg-gray-300 text-gray-800 py-2 px-6 rounded-full hover:underline bg-yellow-300">Read More</button></a>
+        <button class="bg-gray-300 py-2 px-6 rounded-full hover:bg-yellow-600 bg-yellow-500 text-white font-semibold">Read More</button></a>
       </div>
     </section>
   </section>

@@ -15,12 +15,17 @@
 
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-      html {
+      html, body {
         scroll-behavior: smooth;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        overflow: visible !important;
+        z-index: auto;
       }
 
-      body {
-        font-family: "Montserrat", sans-serif;
+      #imageModal {
+        position: fixed;
+        z-index: 99999 !important;
       }
 
       p, ul, li {
@@ -87,6 +92,16 @@
         border: 1px dashed #ccc; /* Dashed border */
         color: #999; /* Light gray text */
         font-size: 1.2rem;
+      }
+
+      header {
+        z-index: 20 !important;
+      }
+
+      .fixed-nav {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 15 !important;
       }
     </style>
   </head>

@@ -50,16 +50,73 @@
       });
 
       // Document Fragments
-      document.addEventListener("DOMContentLoaded", function() {
-        const links = document.querySelectorAll(".nav-link");
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
 
-        function setActiveLink() {
-          links.forEach(link => link.classList.remove("border-b-4", "border-yellow-500"));
-          this.classList.add("border-b-4", "border-yellow-500");
+        function updateActiveLink() {
+          let scrollY = window.scrollY;
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 150; // Adjust offset to match nav height
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+              navLinks.forEach((link) =>
+                link.classList.remove(
+                  "border-b-4",
+                  "border-yellow-500",
+                  "text-yellow-500"
+                )
+              );
+              document
+                .querySelector(`.nav-link[href="#${sectionId}"]`)
+                .classList.add(
+                  "border-b-4",
+                  "border-yellow-500",
+                  "text-yellow-500"
+                );
+            }
+          });
         }
 
-        links.forEach(link => link.addEventListener("click", setActiveLink));
+        window.addEventListener("scroll", updateActiveLink);
+        updateActiveLink(); // Call on load in case user refreshes in the middle of page
       });
+
+      // Modal Certificates
+      function openModal(event, imgSrc) {
+        event.preventDefault();
+        document.getElementById('modalImage').src = imgSrc;
+        document.getElementById('imageModal').classList.remove('hidden');
+      }
+
+      function closeModal() {
+        document.getElementById('imageModal').classList.add('hidden');
+      }
+
+      // Active Current Page
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = window.location.pathname.split("/").pop(); // Get current page
+        const navLinks = document.querySelectorAll(".main-nav-link"); // Select all links
+
+        navLinks.forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("text-yellow-500"); // Add active border
+          }
+        });
+      });
+
     </script>
+    <!-- Modal (Hidden by Default) -->
+    <div id="imageModal" class="fixed inset-0 z-[9999] hidden bg-black bg-opacity-75 flex items-center justify-center">
+        <div class="relative max-w-4xl">
+          <!-- Close Button -->
+          <button onclick="closeModal()" class="absolute top-3 right-3 text-black text-3xl font-bold">&times;</button>
+          <!-- Full Image -->
+          <img id="modalImage" class="max-h-screen w-auto rounded-lg shadow-lg">
+        </div>
+      </div>
   </body>
 </html>

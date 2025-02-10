@@ -6,20 +6,21 @@
   
 <!-- MAIN CONTENT -->
 <main class="mb-auto">
-  <section class="container mx-auto px-44 py-24 sticky top-0">
-    <nav class="flex justify-between items-center">
-      <a href="#about" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">About Us</a>
-      <a href="#story" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Our Story</a>
-      <a href="#quality" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Quality Control & TQA</a>
-      <a href="#manpower" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Manpower & Training</a>
-      <a href="#certificates" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Certificates</a>
-      <a href="#quality-acc" class="nav-link text-gray-700 font-semibold hover:text-yellow-500">Quality Accreditations</a>
+  <!-- DOCUMENT FRAGMENT -->
+  <section class="container mx-auto px-44 pt-24 fixed top-0 left-0 fixed-nav">
+    <nav class="flex justify-between items-center border-b">
+      <a href="#about" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">About Us</a>
+      <a href="#story" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">Our Story</a>
+      <a href="#quality" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">Quality Control</a>
+      <a href="#manpower" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">Manpower & Training</a>
+      <a href="#certificates" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">Certificates</a>
+      <a href="#quality-acc" class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-yellow-500">Quality Accreditations</a>
     </nav>
   </section>
 
   <!-- ABOUT US SECTION -->
   <section
-    class="container mx-auto px-44 py-20 sm:mt-20 dark:bg-gray-100 dark:text-gray-800" id="about"
+    class="container mx-auto px-44 py-20 pt-44 mt-40 dark:bg-gray-100 dark:text-gray-800" id="about"
   >
     <h1
       class="text-5xl font-bold text-yellow-500 text-pretty text-center"
@@ -129,12 +130,12 @@
   </section>
 
   <!-- OUR STORY SECTION -->
-  <section class="container mx-auto sm:px-44 py-16 mt-16" id="story">
+  <section class="container mx-auto pt-44 sm:px-44 py-16 mt-16" id="story">
     <!-- <div class="container max-w-5xl px-4 py-12 mx-auto mt-10"> -->
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">
           <div
-            class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-600"
+            class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-yellow-500"
           >
             <h3 class="text-3xl font-semibold">Our Story</h3>
             <!-- <span
@@ -148,7 +149,7 @@
             class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300"
           >
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
                 Foundation and Initial Growth
@@ -187,7 +188,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
               Expansion into Electric Cables and Certifications
@@ -226,7 +227,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
               International Certification and Expansion
@@ -262,7 +263,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
               Facility Expansion and Environmental Standards
@@ -298,7 +299,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
               Continued Growth and ISO Updates
@@ -331,7 +332,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"
+              class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-yellow-500"
             >
               <h3 class="text-xl font-semibold tracking-wide">
               Modernization and New Standards
@@ -362,7 +363,7 @@
 
   <!-- QA SECTION -->
   <section
-    class="container mx-auto sm:px-44 py-20 mt-16 dark:bg-gray-100 dark:text-gray-800" id="quality"
+    class="container mx-auto sm:px-44 py-20 pt-44 mt-16 dark:bg-gray-100 dark:text-gray-800" id="quality"
   >
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
@@ -500,7 +501,7 @@
   </section>
 
   <!-- MANPOWER SECTION -->
-  <section class="container mx-auto sm:px-44 py-5 mt-16" id="manpower">
+  <section class="container mx-auto sm:px-44 py-5 mt-16 pt-44" id="manpower">
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -651,7 +652,7 @@
   </section>
 
   <!-- HONOR CERTIFICATE SECTION -->
-  <section class="container mx-auto sm:px-44 py-20 mt-16 lg:mt-16 dark:bg-gray-100 dark:text-gray-800" id="certificates">
+  <section class="container pt-44 mx-auto sm:px-44 py-20 mt-16 lg:mt-16 dark:bg-gray-100 dark:text-gray-800" id="certificates">
     <h2
       class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -662,9 +663,8 @@
         <div class="swiper-slide">
           <div class="certificate-placeholder bg-gray-200">
             <a href="#" onclick="openModal(event, '/assets/sertifikat/Sertifikat-ISO-14001-2015/Sertifikat ISO 14001 2015_page-0001.jpg')">
-
+              <img src="/assets/sertifikat/Sertifikat-ISO-14001-2015/Sertifikat ISO 14001 2015_page-0001.jpg" alt="Certificates" class="cursor-pointer hover:opacity-80 transition">
             </a>
-            <img src="/assets/sertifikat/Sertifikat-ISO-14001-2015/Sertifikat ISO 14001 2015_page-0001.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
@@ -700,7 +700,7 @@
   </section>
 
   <!-- QUALITY ACCREDITATION SECTION -->
-  <section class="container mx-auto sm:px-44 py-20 pb-20" id="quality-acc">
+  <section class="container mx-auto sm:px-44 py-20 pb-20 pt-44" id="quality-acc">
     <h2
       class="mt-2 py-10 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
     >
@@ -745,70 +745,6 @@
         height="48"
       />
     </div>
-    <!-- <div
-      class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4"
-    >
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
-        alt="Transistor"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
-        alt="Reform"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
-        alt="Tuple"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
-        alt="SavvyCal"
-        width="158"
-        height="48"
-      />
-    </div>
-    <div
-      class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4"
-    >
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
-        alt="Transistor"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
-        alt="Reform"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
-        alt="Tuple"
-        width="158"
-        height="48"
-      />
-      <img
-        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
-        alt="SavvyCal"
-        width="158"
-        height="48"
-      />
-    </div> -->
   </section>
 </main>
 
