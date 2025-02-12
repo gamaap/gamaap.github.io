@@ -1,7 +1,5 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- from node_modules -->
-    <script src="node_modules/@material-tailwind/html@latest/scripts/dialog.js"></script>
     <!-- from cdn -->
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
     <script>
@@ -109,28 +107,45 @@
       });
 
       // Event for Request A Quotation in Contact Page
-      document.getElementById("subject").addEventListener("change", function () {
-        const selectContainer = document.getElementById("select-container");
-        const quotationBox = document.getElementById("quotation-box");
+      if(window.location.pathname == '/contact.php') {
+        document.getElementById("subject").addEventListener("change", function () {
+          const selectContainer = document.getElementById("select-container");
+          const quotationBox = document.getElementById("quotation-box");
+  
+          if (this.value === "quotation") {
+            selectContainer.classList.replace("col-span-10", "col-span-5"); // Shrink select box
+            quotationBox.classList.remove("hidden"); // Show text input
+          } else {
+            selectContainer.classList.replace("col-span-5", "col-span-10"); // Restore full width
+            quotationBox.classList.add("hidden"); // Hide text input
+          }
+        });
+      }
 
-        if (this.value === "quotation") {
-          selectContainer.classList.replace("col-span-10", "col-span-5"); // Shrink select box
-          quotationBox.classList.remove("hidden"); // Show text input
-        } else {
-          selectContainer.classList.replace("col-span-5", "col-span-10"); // Restore full width
-          quotationBox.classList.add("hidden"); // Hide text input
+      // Toggle language
+      document.getElementById("lang-toggle").addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevents click from closing immediately
+        const dropdown = document.getElementById("lang-dropdown");
+        dropdown.classList.toggle("hidden");
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("lang-dropdown");
+        if (!dropdown.contains(event.target) && event.target.id !== "lang-toggle") {
+          dropdown.classList.add("hidden");
         }
       });
 
     </script>
     <!-- Modal (Hidden by Default) -->
     <div id="imageModal" class="fixed inset-0 z-[9999] hidden bg-black bg-opacity-75 flex items-center justify-center">
-        <div class="relative max-w-4xl">
-          <!-- Close Button -->
-          <button onclick="closeModal()" class="absolute top-3 right-3 text-black text-3xl font-bold">&times;</button>
-          <!-- Full Image -->
-          <img id="modalImage" class="max-h-screen w-auto rounded-lg shadow-lg">
-        </div>
+      <div class="relative max-w-4xl">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-3 right-3 text-black text-3xl font-bold">&times;</button>
+        <!-- Full Image -->
+        <img id="modalImage" class="max-h-screen w-auto rounded-lg shadow-lg">
       </div>
+    </div>
   </body>
 </html>
