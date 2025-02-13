@@ -11,6 +11,17 @@
             alignleft aligncenter alignright alignjustify | \
             bullist numlist outdent indent',
     });
+
+    tinymce.init({
+      selector: 'textarea#detail-product',
+      menubar: false,
+      branding: false,
+      statusbar: false,
+      plugins: 'advlist autolink lists link image charmap print preview anchor',
+      toolbar: 'undo redo | blocks | bold italic underline | \
+            alignleft aligncenter alignright alignjustify | \
+            bullist numlist outdent indent',
+    });
   </script>
   </body>
 </html>
