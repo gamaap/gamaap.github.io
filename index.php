@@ -345,39 +345,182 @@
     </div>
   </section>
 
-  <!-- TESTIMONY SECTION -->
+  <!-- AWARDS AND ACHIEVEMENTS SECTION -->
   <section class="container mx-auto sm:px-20 mt-8 py-16">
-    <h2
-      class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
-    >
-      What They Say About Us
-    </h2>
-    <div
-      class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
-    ></div>
-    <div
-      class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
-    ></div>
+      <h2
+        class="mt-2 text-pretty text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+      >
+        Awards and Achievements
+      </h2>
+      <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+      ></div>
 
-    <div class="mx-auto max-w-2xl lg:max-w-4xl">
-      <figure class="mt-10">
-        <blockquote
-          class="text-center text-xl/8 text-gray-900 sm:text-2xl/9"
-        >
-          <p>
-            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
-            laborum sed rerum et corporis.”
-          </p>
-        </blockquote>
-      </figure>
-      <img
-        class="mx-auto h-12 mt-4"
-        src="https://tailwindui.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
-        alt=""
-      />
-    </div>
-  </section>
+      <div class="swiper swiper-awards">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 cursor-pointer"
+              >
+                <p>“2007 Outstanding Performance Award .”</p>
+                <p class="font-bold">SHARP</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>
+                  “2011 Best Support of Production Recovery after Japan
+                  Earthquake.”
+                </p>
+                <p class="font-bold">SANKEN</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2012 Supplier Appreciation (Best Delivery Supplier).”</p>
+                <p class="font-bold">AHM</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2013 The Excellence Supplier 2013.”</p>
+                <p class="font-bold">KOITO</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2014 3rd Winner Best Supplier on Fiscal 2013.”</p>
+                <p class="font-bold">SHARP</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2014 Delivery Award Supplier.”</p>
+                <p class="font-bold">KOITO</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2015 Suppliers Award (EPS PLATINUM).”</p>
+                <p class="font-bold">AHM</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2015 Quality Best Supllier 2015.”</p>
+                <p class="font-bold">PT.INDONESIA KOITO</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>
+                  “2016 Appreciation for On Time Delivery (2016 Vendor Award).”
+                </p>
+                <p class="font-bold">EPSON</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2018 Support Supplier Performance Award .”</p>
+                <p class="font-bold"></p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2018 The Best Cost Improvement.”</p>
+                <p class="font-bold">MITSUBA</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2018 Best Performance Delivery .”</p>
+                <p class="font-bold">ASAHI DENSO INDONESIA</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“Best Quality Performance Supplier 24F.”</p>
+                <p class="font-bold">SHARP</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2022 The Best Supplier Seid 2022.”</p>
+                <p class="font-bold">SHARP</p>
+              </blockquote>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="mt-2">
+              <blockquote
+                class="text-center text-xl/8 text-gray-900 sm:text-2xl/9 mt-4 cursor-pointer"
+              >
+                <p>“2023 Appreciation of Effort Delivery Performance.”</p>
+                <p class="font-bold">MITSUBISHI</p>
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-awards"></div>
+        <div class="swiper-button-next swiper-button-next-awards"></div>
+      </div>
+    </section>
 
   <!-- JOIN OUR TEAMS SECTION -->
   <section
@@ -391,7 +534,7 @@
         <img
           alt="A group of diverse people working together on laptops"
           class="w-full rounded-lg h-48 object-cover"
-          src="/assets/hero/joinus.jpg"
+          src="/assets/hero/6.png"
         />
       </div>
       <div class="md:w-1/2 md:pl-8 md:mt-0 flex flex-col justify-center">

@@ -34,6 +34,24 @@
           clickable: true,
         },
       });
+
+      // Swiper for awards
+      const swiperAwards = new Swiper(".swiper-awards", {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next-awards',
+          prevEl: '.swiper-button-prev-awards',
+        },
+      });
       
 
       // Swiper for certificate

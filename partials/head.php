@@ -42,8 +42,8 @@
         opacity: 1;
       }
 
-      .swiper-button-prev-certificate, 
-      .swiper-button-next-certificate {
+      .swiper-button-prev-awards, 
+      .swiper-button-next-awards {
         color: #D1B312;
       }
 

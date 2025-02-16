@@ -3,102 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
-  <body>
-    <section class="fixed top-0 left-0 container mx-auto px-44 py-6 sm:mt-6">
-      <nav class="flex justify-between border-b">
-        <a
-          href="#home"
-          class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-blue-600"
-          >Home</a
-        >
-        <a
-          href="#about"
-          class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-blue-600"
-          >About</a
-        >
-        <a
-          href="#services"
-          class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-blue-600"
-          >Services</a
-        >
-        <a
-          href="#contact"
-          class="nav-link flex-1 text-center py-4 text-gray-700 font-semibold hover:text-blue-600"
-          >Contact</a
-        >
-      </nav>
-    </section>
+  <body class="bg-gray-100 font-sans">
+    <div class="max-w-4xl mx-auto p-6">
+      <!-- Navigation Bar -->
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex items-center space-x-2">
+          <button
+            onclick="history.back()"
+            class="text-gray-700 hover:text-gray-900"
+          >
+            &#8592;
+          </button>
+          <span class="text-lg font-semibold">CV Digital</span>
+        </div>
+        <div class="flex space-x-2">
+          <button
+            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          >
+            Approved
+          </button>
+          <button
+            class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+          >
+            Pending
+          </button>
+          <button
+            class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          >
+            Rejected
+          </button>
+        </div>
+      </div>
+      <header class="bg-white shadow-md rounded-lg p-6 mb-6 text-center">
+        <h1 class="text-3xl font-bold text-gray-800">John Doe</h1>
+        <p class="text-gray-600">Web Developer & Designer</p>
+      </header>
 
-    <!-- Example sections for scrolling -->
-    <section
-      id="home"
-      class="h-screen flex items-center justify-center bg-gray-100"
-    >
-      Home Content
-    </section>
-    <section
-      id="about"
-      class="h-screen flex items-center justify-center bg-gray-200"
-    >
-      About Content
-    </section>
-    <section
-      id="services"
-      class="h-screen flex items-center justify-center bg-gray-300"
-    >
-      Services Content
-    </section>
-    <section
-      id="contact"
-      class="h-screen flex items-center justify-center bg-gray-400"
-    >
-      Contact Content
-    </section>
+      <section class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed">
+          I am a passionate web developer with experience in building modern and
+          responsive websites. My expertise includes HTML, CSS, JavaScript, and
+          various frameworks.
+        </p>
+      </section>
 
-    <!-- JavaScript to Handle Active Link Update -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".nav-link");
+      <section class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+          <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">HTML</span>
+          <span class="bg-green-500 text-white px-4 py-2 rounded-lg">CSS</span>
+          <span class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+            >JavaScript</span
+          >
+          <span class="bg-purple-500 text-white px-4 py-2 rounded-lg"
+            >React</span
+          >
+          <span class="bg-red-500 text-white px-4 py-2 rounded-lg"
+            >Node.js</span
+          >
+          <span class="bg-indigo-500 text-white px-4 py-2 rounded-lg"
+            >Tailwind CSS</span
+          >
+        </div>
+      </section>
 
-        function updateActiveLink() {
-          let scrollY = window.scrollY;
+      <section class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Projects</h2>
+        <ul class="space-y-4">
+          <li class="bg-gray-200 p-4 rounded-lg">
+            <h3 class="text-lg font-bold text-gray-800">Project 1</h3>
+            <p class="text-gray-700">
+              A responsive web application built using React and Tailwind CSS.
+            </p>
+          </li>
+          <li class="bg-gray-200 p-4 rounded-lg">
+            <h3 class="text-lg font-bold text-gray-800">Project 2</h3>
+            <p class="text-gray-700">
+              An e-commerce website developed with Node.js and Express.
+            </p>
+          </li>
+        </ul>
+      </section>
 
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 150; // Adjust offset to match nav height
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute("id");
-
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-              navLinks.forEach((link) =>
-                link.classList.remove(
-                  "border-b-4",
-                  "border-blue-600",
-                  "text-blue-600"
-                )
-              );
-              document
-                .querySelector(`.nav-link[href="#${sectionId}"]`)
-                .classList.add(
-                  "border-b-4",
-                  "border-blue-600",
-                  "text-blue-600"
-                );
-            }
-          });
-        }
-
-        window.addEventListener("scroll", updateActiveLink);
-        updateActiveLink(); // Call on load in case user refreshes in the middle of page
-      });
-    </script>
+      <section class="bg-white shadow-md rounded-lg p-6 mb-6 text-center">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact</h2>
+        <p class="text-gray-700">Email: johndoe@example.com</p>
+        <p class="text-gray-700">LinkedIn: linkedin.com/in/johndoe</p>
+      </section>
+    </div>
   </body>
 </html>

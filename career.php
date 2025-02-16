@@ -12,7 +12,7 @@
             <div
             class="w-full min-h-[400px] bg-top bg-cover relative flex items-end p-6"
             style="
-                background-image: url(/assets/hero/4.png);
+                background-image: url(/assets/hero/joinus2.png);
             "
             >
             <div
