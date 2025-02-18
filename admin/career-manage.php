@@ -2,39 +2,39 @@
 <?php require("partials/nav.php") ?>
 <?php require("partials/banner.php") ?>
 
-<main>
+<main class="h-screen">
   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
     <div class="bg-white shadow-lg rounded-lg p-6 flex justify-between items-start w-full h-auto relative border border-gray-200">
     <!-- Left: Job Information -->
       <div class="w-2/3">
-          <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
-               Job Name
-          </h2>
-          <p class="text-sm text-gray-700 flex items-center gap-2 mt-1 mb-6">
-              <i class="fa-solid fa-building text-gray-500"></i> Department
-          </p>
-          <p class="text-sm text-gray-700 font-semibold flex items-center gap-2 mt-3">
-              <i class="fa-solid fa-list-check text-yellow-500"></i> Requirements
-          </p>
+        <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              Job Name
+        </h2>
+        <p class="text-sm text-gray-700 flex items-center gap-2 mt-1 mb-6">
+            <i class="fa-solid fa-building text-gray-500"></i> Department
+        </p>
+        <p class="text-sm text-gray-700 font-semibold flex items-center gap-2 mt-3">
+            <i class="fa-solid fa-list-check text-yellow-500"></i> Requirements
+        </p>
 
-          <!-- Skills Badges -->
-          <div class="flex flex-wrap gap-2 mt-4">
-              <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
-                  <i class="fa-solid fa-star"></i> Skill 1
-              </span>
-              <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
-                  <i class="fa-solid fa-star"></i> Skill 2
-              </span>
-              <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
-                  <i class="fa-solid fa-star"></i> Skill 3
-              </span>
-              <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
-                  <i class="fa-solid fa-star"></i> Skill 4
-              </span>
-              <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
-                  <i class="fa-solid fa-star"></i> Skill 5
-              </span>
-          </div>
+        <!-- Skills Badges -->
+        <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-star"></i> Skill 1
+            </span>
+            <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-star"></i> Skill 2
+            </span>
+            <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-star"></i> Skill 3
+            </span>
+            <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-star"></i> Skill 4
+            </span>
+            <span class="bg-yellow-500 text-white text-xs font-medium px-3 py-1 rounded-full flex items-center gap-2">
+                <i class="fa-solid fa-star"></i> Skill 5
+            </span>
+        </div>
       </div>
 
       <!-- Top Right: Job Type & Location -->

@@ -11,11 +11,11 @@
     class="container mx-auto px-44 max-w-full py-20 mt-20 dark:bg-gray-100 dark:text-gray-800"
   >
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
+      class="flex flex-col lg:flex-row items-center gap-8"
     >
-      <div class="flex flex-col justify-center lg:justify-start">
+      <div class="lg:w-2/5 text-center lg:text-left">
         <h1
-          class="text-balance text-5xl/12 font-semibold tracking-tight text-yellow-500 sm:text-6xl lg:text-5xl uppercase"
+          class="text-balance text-4xl/12 font-semibold tracking-tight text-yellow-500 sm:text-6xl lg:text-4xl uppercase"
         >
           We Produce Any Cables & Wires that Deliver Electricity
         </h1>
@@ -36,46 +36,53 @@
         </div>
       </div>
 
-      <div class="relative rounded-2xl overflow-hidden shadow-lg">
-        <div class="swiper swiper-index">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="assets/main/plant1.jpg"
-                alt="Image 1"
-                class="object-cover w-full h-full rounded-lg shadow-lg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="assets/main/plant1.jpg"
-                alt="Image 2"
-                class="object-cover w-full h-full rounded-lg shadow-lg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="assets/main/plant1.jpg"
-                alt="Image 3"
-                class="object-cover w-full h-full rounded-lg shadow-lg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="assets/main/plant1.jpg"
-                alt="Image 4"
-                class="object-cover w-full h-full rounded-lg shadow-lg"
-              />
-            </div>
+      <div class="lg:w-3/5 w-full">
+        <div class="relative rounded-2xl overflow-hidden col-span-3">
+          <div class="w-full h-[400px]">
+            <video class="absolute top-0 left-0 w-full h-[400px] object-cover" autoplay muted loop>
+              <source src="/assets/video/ewindo web vid.mp4" type="video/mp4">
+            </video>
           </div>
-          <div class="swiper-pagination swiper-pagination-index"></div>
+          <!-- <div class="swiper swiper-index">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/main/plant1.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/main/plant1.jpg"
+                  alt="Image 2"
+                  class="object-cover w-full h-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/main/plant1.jpg"
+                  alt="Image 3"
+                  class="object-cover w-full h-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/main/plant1.jpg"
+                  alt="Image 4"
+                  class="object-cover w-full h-full rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-index"></div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
   <!-- LOWER CONTENT BELOW THE IMAGES SLIDER SECTION -->
-  <section class="container mx-auto sm:px-44 py-16 mt-8">
+  <section class="container mx-auto sm:px-44 py-16 mt-8 bg-white">
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center sm:py-16"
     >

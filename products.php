@@ -27,7 +27,7 @@
   </section>
   <!-- PRODUCT SEARCH -->
   <div
-    class="flex rounded-full border-2 border-blue-500 overflow-hidden max-w-lg mx-auto font-[sans-serif]"
+    class="flex rounded-full border-2 border-yellow-500 outline-none overflow-hidden max-w-lg mx-auto font-[sans-serif]"
   >
     <input
       type="text"
@@ -36,7 +36,7 @@
     />
     <button
       type="button"
-      class="flex items-center justify-center bg-blue-500 hover:bg-blue-600 px-6"
+      class="flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 px-6"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -53,10 +53,10 @@
   <!-- SLIDER CATEGORY -->
   <section class="text-center my-8">
     <div class="flex justify-center space-x-4">
-      <a class="text-gray-800 hover:text-yellow-500" href="#">CAT</a>
-      <a class="text-gray-800 hover:text-yellow-500" href="#">CAT</a>
-      <a class="text-gray-800 hover:text-yellow-500" href="#">CAT</a>
-      <a class="text-gray-800 hover:text-yellow-500" href="#">CAT</a>
+      <a class="text-yellow-500 hover:text-yellow-400" href="#">CAT</a>
+      <a class="text-yellow-500 hover:text-yellow-400" href="#">CAT</a>
+      <a class="text-yellow-500 hover:text-yellow-400" href="#">CAT</a>
+      <a class="text-yellow-500 hover:text-yellow-400" href="#">CAT</a>
     </div>
     <hr class="mt-4 border-gray-300" />
   </section>

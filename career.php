@@ -10,7 +10,7 @@
     <section class="container mx-auto sm:px-44 pt-20 mt-8">
         <div class="w-full rounded-lg overflow-hidden shadow-lg">
             <div
-            class="w-full min-h-[400px] bg-top bg-cover relative flex items-end p-6"
+            class="w-full min-h-[400px] bg-bottom    bg-cover relative flex items-end p-6"
             style="
                 background-image: url(/assets/hero/joinus2.png);
             "

@@ -2,37 +2,37 @@
 <?php require("partials/nav.php") ?>
 <?php require("partials/banner.php") ?>
 
-<main class="h-screen">
-  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <div class="flex gap-6">
-      <aside class="w-72 flex-none bg-gray-100 p-4 h-[200px]">
-          <ul class="my-3">
-            <li class="border-b border-gray-900 pb-4">
-              <a href="#" class="flex items-center justify-between px-4 py-2 text-white bg-yellow-500 rounded-lg shadow-sm font-semibold hover:bg-yellow-400">
-                  Semua Loker <span class="bg-white text-yellow-500 text-xs font-semibold px-2 py-1 rounded-full">20</span>
-              </a>
-            </li>
-            <li class="mt-2 pt-3">
-              <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white rounded-lg shadow-sm font-semibold hover:bg-gray-200">
-                  Aktif <span class="bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-full">7</span>
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white rounded-lg shadow-sm font-semibold hover:bg-gray-200">
-                Nonaktif <span class="bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-full">13</span>
-              </a>
-            </li>
-          </ul>
-          <div class="relative w-full mt-6">
-            <a href="/admin/press-create.php" class="w-full rounded-md bg-yellow-500 px-3 py-2 text-lg font-semibold text-white shadow-xs hover:bg-yellow-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600">
+<main class="h-screen overflow-hidden">
+  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-full">
+    <div class="flex gap-6 h-full">
+      <aside class="w-72 flex-none bg-gray-100 p-4 h-full">
+        <ul class="my-3">
+          <li class="border-b border-gray-900 pb-4">
+            <a href="#" class="flex items-center justify-between px-4 py-2 text-white bg-yellow-500 rounded-lg shadow-sm font-semibold hover:bg-yellow-400">
+                Semua Loker <span class="bg-white text-yellow-500 text-xs font-semibold px-2 py-1 rounded-full">20</span>
+            </a>
+          </li>
+          <li class="mt-2 pt-3">
+            <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white rounded-lg shadow-sm font-semibold hover:bg-gray-200">
+                Aktif <span class="bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-full">7</span>
+            </a>
+          </li>
+          <li class="mt-2">
+            <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white rounded-lg shadow-sm font-semibold hover:bg-gray-200">
+              Nonaktif <span class="bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-full">13</span>
+            </a>
+          </li>
+        </ul>
+        <div class="absolute bottom-4 left-44 right-4">
+          <a href="/admin/press-create.php" class="rounded-md bg-yellow-500 px-3 py-2 text-lg font-semibold text-white shadow-xs hover:bg-yellow-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="inline size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
             </svg>
-            Tambah Loker
-            </a>
-          </div>
+          Tambah Loker
+          </a>
+        </div>
       </aside>
-      <div class="w-full h-screen relative overflow-x-auto sm:rounded-lg">
+      <div class="w-full h-full relative overflow-auto sm:rounded-lg pb-40 -mb-40">
         <?php for ($i = 0; $i < 5; $i++) : ?>
           <div class="card mt-7 bg-white border-3 border-gray-200 rounded-lg shadow-lg">
             <div class="flex items-center justify-between gap-y-10 gap-20 p-8">
@@ -110,6 +110,7 @@
             </div>
           </div>
         <?php endfor; ?>
+        <!-- <div class="after:content-[''] after:block after:h-40"></div> -->
       </div>
     </div> 
   </div>
